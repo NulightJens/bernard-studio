@@ -1,0 +1,222 @@
+{
+ "style": "the-art-of",
+ "spec_version": 1,
+ "passage": "passage/passage.json",
+ "topic": "building your brand",
+ "cover": {
+  "objects": [
+   "lt_bold",
+   "ph_plan",
+   "candles",
+   "katana",
+   "pocketwatch"
+  ],
+  "left": {
+   "pose": "bernard-desk-hands-on-glasses",
+   "box": [
+    -65,
+    760,
+    452,
+    1360
+   ]
+  },
+  "right": {
+   "pose": "bernard-kit-red-profile",
+   "box": [
+    572,
+    785,
+    1081,
+    1360
+   ]
+  },
+  "plus": [
+   520,
+   1085
+  ]
+ },
+ "sections": [
+  {
+   "name": "PACKAGING",
+   "items": [
+    {
+     "object": "apple",
+     "text": "Not the best phone. The best packaging."
+    },
+    {
+     "object": "buns",
+     "text": "Not the best burger. The best system."
+    },
+    {
+     "object": "box",
+     "text": "Canvas and cardboard, packaged well"
+    },
+    {
+     "object": "chair_generic",
+     "text": "The same Canva templates as 3 million others"
+    },
+    {
+     "object": "megaphone",
+     "text": "Your message might be better"
+    },
+    {
+     "object": "magnifier",
+     "text": "They can't tell. The packaging is identical."
+    }
+   ]
+  },
+  {
+   "name": "TASTE",
+   "items": [
+    {
+     "object": "frame1",
+     "text": "Your brand already exists in the things you love"
+    },
+    {
+     "object": "postcards",
+     "text": "Pick two. Mine: Shogun + Samurai Rabbit"
+    },
+    {
+     "object": "chess",
+     "text": "The contrast is where the interesting stuff lives"
+    },
+    {
+     "object": "projector",
+     "text": "The show that made you lean in"
+    },
+    {
+     "object": "cassette",
+     "text": "An album cover. A painting. A building."
+    },
+    {
+     "object": "camera",
+     "text": "Screenshot it. Save it to a folder."
+    }
+   ]
+  },
+  {
+   "name": "THE PROMPT",
+   "items": [
+    {
+     "object": "register",
+     "text": "Claude Pro: $20 a month"
+    },
+    {
+     "object": "candlestick",
+     "text": "Dark, moody, minimal"
+    },
+    {
+     "object": "stationery",
+     "text": "Ink on cream paper, blood-red accents"
+    },
+    {
+     "object": "encyclopedia",
+     "text": "Build me a complete brand guide"
+    },
+    {
+     "object": "bino",
+     "text": "Drag your screenshots in. Claude sees them."
+    },
+    {
+     "object": "tape",
+     "text": "Typography, spacing, visual rules"
+    }
+   ]
+  },
+  {
+   "name": "THE LIBRARY",
+   "items": [
+    {
+     "object": "cards",
+     "text": "50 templates, all on brand"
+    },
+    {
+     "object": "ph_bold",
+     "text": "Quote cards, carousel covers, announcements"
+    },
+    {
+     "object": "spray",
+     "text": "Only your colors. Only your fonts."
+    },
+    {
+     "object": "lt_three",
+     "text": "Export it. Edit it in Canva."
+    },
+    {
+     "object": "ph_cream",
+     "text": "30 quote cards in one sitting"
+    },
+    {
+     "object": "clipboard",
+     "text": "Follow the spacing rules from your guide"
+    }
+   ]
+  },
+  {
+   "name": "THE ROUTINE",
+   "items": [
+    {
+     "object": "clock",
+     "text": "Every Wednesday, sit down to create"
+    },
+    {
+     "object": "lt_plan",
+     "text": "Open the library. Pick a template."
+    },
+    {
+     "object": "desklamp",
+     "text": "Change a quote. Export. Schedule."
+    },
+    {
+     "object": "mantel",
+     "text": "Under one minute per post"
+    },
+    {
+     "object": "bust",
+     "text": "It looks designed, not generated"
+    },
+    {
+     "object": "chest",
+     "text": "The content that gets saved"
+    }
+   ]
+  },
+  {
+   "name": "PRESENCE",
+   "items": [
+    {
+     "object": "lt_feed",
+     "text": "LinkedIn, website, Zoom: all the same. That is trust."
+    },
+    {
+     "object": "frame2",
+     "text": "A website like a curated gallery"
+    },
+    {
+     "object": "lion",
+     "text": "Look like a team of 20"
+    },
+    {
+     "object": "videocam",
+     "text": "2,000 posts. 5M impressions. All organic."
+    },
+    {
+     "object": "bulb",
+     "text": "Your taste is the input. AI makes it real."
+    },
+    {
+     "object": "suitcase",
+     "text": "Let the machine build the packaging"
+    }
+   ]
+  }
+ ],
+ "last": {
+  "photo": {
+   "source": "yt-90r2bvnfiqe",
+   "t": 343.0,
+   "x": 0.4773
+  },
+  "headline": "Your presence is your strategy.",
+  "line": "Your taste is the input.\nAI just makes it real."
+ }
+}

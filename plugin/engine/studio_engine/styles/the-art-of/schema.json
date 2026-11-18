@@ -1,0 +1,87 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$defs": {
+  "line": {"type": "string", "minLength": 1, "maxLength": 80},
+  "picture": {
+   "type": "object",
+   "required": ["source"],
+   "properties": {
+    "source": {"type": "string", "minLength": 1},
+    "t": {"type": "number", "minimum": 0},
+    "from": {"type": "number", "minimum": 0},
+    "to": {"type": "number", "minimum": 0},
+    "zoom": {"type": "number", "minimum": 1, "maximum": 3},
+    "x": {"type": "number", "minimum": 0, "maximum": 1},
+    "y": {"type": "number", "minimum": 0, "maximum": 1}
+   },
+   "additionalProperties": false
+  },
+  "cutout": {
+   "type": "object",
+   "required": ["pose"],
+   "properties": {
+    "pose": {"type": "string", "minLength": 1},
+    "box": {"type": "array", "items": {"type": "number"}, "minItems": 4, "maxItems": 4}
+   },
+   "additionalProperties": false
+  }
+ },
+ "type": "object",
+ "required": ["style", "spec_version", "topic", "cover", "sections", "last"],
+ "properties": {
+  "style": {"const": "the-art-of"},
+  "spec_version": {"const": 1},
+  "passage": {"type": "string"},
+  "format": {"type": "object"},
+  "topic": {"type": "string", "minLength": 2, "maxLength": 28},
+  "cover": {
+   "type": "object",
+   "required": ["objects", "left", "right"],
+   "properties": {
+    "objects": {"type": "array", "items": {"type": "string"}, "minItems": 5, "maxItems": 5},
+    "left": {"$ref": "#/$defs/cutout"},
+    "right": {"$ref": "#/$defs/cutout"},
+    "plus": {"type": "array", "items": {"type": "number"}, "minItems": 2, "maxItems": 2}
+   },
+   "additionalProperties": false
+  },
+  "sections": {
+   "type": "array",
+   "minItems": 3,
+   "maxItems": 8,
+   "items": {
+    "type": "object",
+    "required": ["name", "items"],
+    "properties": {
+     "name": {"type": "string", "minLength": 2, "maxLength": 22},
+     "items": {
+      "type": "array",
+      "minItems": 6,
+      "maxItems": 6,
+      "items": {
+       "type": "object",
+       "required": ["object", "text"],
+       "properties": {"object": {"type": "string"}, "text": {"$ref": "#/$defs/line"}},
+       "additionalProperties": false
+      }
+     }
+    },
+    "additionalProperties": false
+   }
+  },
+  "last": {
+   "type": "object",
+   "required": ["photo", "headline"],
+   "properties": {
+    "photo": {"$ref": "#/$defs/picture"},
+    "headline": {"type": "string", "minLength": 2, "maxLength": 40},
+    "line": {"type": "string", "maxLength": 90}
+   },
+   "additionalProperties": false
+  },
+  "beats": {"type": "array", "maxItems": 0},
+  "sound": {"type": "object"},
+  "brand": {"type": "object"}
+ },
+ "additionalProperties": false
+}

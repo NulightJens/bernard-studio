@@ -1,0 +1,115 @@
+{
+  "schema": 1,
+  "components": {
+    "homebrew": {
+      "name": "Homebrew",
+      "what": "the standard free installer for Mac tools. A Terminal window opens and you type your Mac password once.",
+      "needs": [],
+      "disk_gb": 2,
+      "password": true
+    },
+    "base": {
+      "name": "Base tools",
+      "what": "video tools, speech-to-text with its model, the Python environment, and your Bernard Studio folder. Every style needs these.",
+      "needs": ["homebrew"],
+      "disk_gb": 5
+    },
+    "slides": {
+      "name": "Slide maker",
+      "what": "a hidden browser that turns slide designs into images",
+      "needs": ["base"],
+      "disk_gb": 1
+    },
+    "remotion": {
+      "name": "Motion graphics",
+      "what": "Node and Remotion, which draw the moving parts, plus the browser they render with",
+      "needs": ["base"],
+      "disk_gb": 2
+    },
+    "matte": {
+      "name": "Cutout model",
+      "what": "the model that cuts you out of the background, plus the model that lines words up with your voice",
+      "needs": ["base"],
+      "disk_gb": 6,
+      "mac": { "apple_silicon": true, "memory_gb": 16 }
+    },
+    "blender": {
+      "name": "Blender",
+      "what": "the free 3D app, only needed to make new object pictures",
+      "needs": ["homebrew"],
+      "disk_gb": 3,
+      "on_demand": true,
+      "mac": { "apple_silicon": true, "memory_gb": 16 }
+    },
+    "links": {
+      "name": "Link downloader",
+      "what": "downloads your own posts from YouTube or TikTok links",
+      "needs": ["homebrew"],
+      "disk_gb": 1,
+      "on_demand": true
+    },
+    "auphonic": {
+      "name": "Auphonic key",
+      "what": "optional: cleaner voice through your own Auphonic account. The key is kept in your Mac's Keychain.",
+      "needs": [],
+      "disk_gb": 0,
+      "on_demand": true,
+      "optional": true
+    }
+  },
+  "styles": {
+    "screen-and-face":   { "needs": ["base", "remotion"] },
+    "receipts":          { "needs": ["base"] },
+    "documentary":       { "needs": ["base"] },
+    "words-in-the-room": { "needs": ["base", "remotion", "matte"] },
+    "cutout":            { "needs": ["base", "matte"] },
+    "the-art-of":        { "needs": ["base", "slides"], "optional": { "matte": "only to make new poses from your footage", "blender": "only to make new objects" } },
+    "prompt-pack":       { "needs": ["base", "slides"] },
+    "field-notes":       { "needs": ["base", "slides"] },
+    "top-5":             { "needs": ["base", "slides"] },
+    "zen-garden":        { "needs": ["base"] },
+    "your-feed":         { "needs": ["base", "remotion"] },
+    "moving-type":       { "needs": ["base"] }
+  },
+  "pins": {
+    "homebrew_installer": {
+      "url": "https://raw.githubusercontent.com/Homebrew/install/e5b3c5834e3932c8aaa42deef4794076c9b0cbf0/install.sh",
+      "sha256": "5f333bbe53bc490e51e7ccb1df8779b3dd6ee73a1a7379efda216edb08ccb148"
+    },
+    "brew": {
+      "base": ["ffmpeg", "whisper-cpp", "uv"],
+      "remotion": ["node@22"],
+      "links": ["yt-dlp"],
+      "blender_cask": "blender",
+      "tested": { "ffmpeg": "8.0.1", "whisper-cpp": "1.9.4", "uv": "0.9.26", "node@22": "22.23.5", "yt-dlp": "2026.08.19", "blender": "5.2.3" },
+      "date_versioned": ["yt-dlp"],
+      "note": "Homebrew serves one current version of each tool and checks every download against its own checksum. These are the versions tested; newer ones are accepted, and studio doctor warns in plain words when an installed tool's major version (major and minor for 0.x) differs from the tested one. yt-dlp is numbered by date and must stay current to keep reading links, so it is not warned about."
+    },
+    "python": "3.12.12",
+    "playwright_browser": "chromium",
+    "whisper_model": {
+      "file": "ggml-medium.en.bin",
+      "url": "https://huggingface.co/ggerganov/whisper.cpp/resolve/5359861c739e955e79d9a303bcbc70fb988958b1/ggml-medium.en.bin",
+      "sha256": "cc37e93478338ec7700281a7ac30a10128929eb8f427dda2e865faa8f6da4356",
+      "bytes": "1533774781"
+    },
+    "birefnet_hr": {
+      "folder": "birefnet-hr",
+      "repo": "ZhengPeng7/BiRefNet_HR-matting",
+      "revision": "5d6b6f8adcb5b417c871b1d84ceaae9871355b7f",
+      "weights_bytes": "444473596",
+      "files": {
+        "config.json": "d0b779ee9a76bf079673c5852c346f439591f016ca0d778a87bbd1dcbe24398a",
+        "BiRefNet_config.py": "e7b8c2a74f6cea6a59553d517f71d47f2c1d90e670a13416af17c25fe2f3dc52",
+        "birefnet.py": "2a45b4e0ece72d7c4212bca1a988e7d7e52bfe9f98ec59c58b8809c8a8b7a831",
+        "model.safetensors": "a5a4de698739ea5e0e8bbab28e1b293dde95092b87a442d566cbc585c53cef55"
+      }
+    },
+    "alignment_model": {
+      "file": "torch/hub/checkpoints/model.pt",
+      "url": "https://dl.fbaipublicfiles.com/mms/torchaudio/ctc_alignment_mling_uroman/model.pt",
+      "sha256": "20ef12963ab4924bef49ac4fc7f58ad5da2ee43b2c11bc8c853c9b90ecdbc680",
+      "bytes": "1262047414"
+    }
+  }
+}

@@ -1,0 +1,89 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "type": "object",
+ "required": ["style", "spec_version", "then", "now"],
+ "$defs": {
+  "at": {"anyOf": [{"type": "integer", "minimum": 0}, {"type": "number"},
+                   {"type": "object", "properties": {"word": {"type": "integer", "minimum": 0}, "t": {"type": "number"},
+                    "edge": {"enum": ["start", "end", "mid"]}, "offset": {"type": "number"}}, "additionalProperties": false}]},
+  "row": {"type": "object", "required": ["text"],
+          "properties": {"label": {"enum": ["FROM", "DATE", "FOR", "TIME", "WHO", "PLUS"]},
+                         "text": {"type": "string", "minLength": 1, "maxLength": 18},
+                         "at": {"$ref": "#/$defs/at"}},
+          "additionalProperties": false},
+  "card": {
+   "type": "object",
+   "required": ["at", "total"],
+   "properties": {
+    "at": {"$ref": "#/$defs/at"},
+    "until": {"$ref": "#/$defs/at"},
+    "item": {"type": "string", "minLength": 1, "maxLength": 18},
+    "total": {"type": "string", "minLength": 1, "maxLength": 9},
+    "unit": {"type": "string", "minLength": 1, "maxLength": 10},
+    "total_at": {"$ref": "#/$defs/at"},
+    "scale": {"type": "number", "minimum": 0.7, "maximum": 1.4},
+    "rows": {"type": "array", "maxItems": 2, "items": {"$ref": "#/$defs/row"}},
+    "hand": {"type": "object", "required": ["text", "at"],
+             "properties": {"text": {"type": "string", "minLength": 1, "maxLength": 18},
+                            "at": {"$ref": "#/$defs/at"},
+                            "label": {"enum": ["PLUS", "FOR", "FROM"]}},
+             "additionalProperties": false}
+   },
+   "additionalProperties": false
+  }
+ },
+ "properties": {
+  "style": {"const": "receipts"},
+  "spec_version": {"const": 1},
+  "passage": {"type": "string"},
+  "format": {"type": "object"},
+  "sources": {"type": "object", "additionalProperties": {"type": "string"}},
+  "opening": {
+   "type": "object",
+   "properties": {
+    "figure": {"type": "string", "maxLength": 9},
+    "trail": {"type": "string", "maxLength": 28},
+    "kicker": {"type": "boolean"},
+    "scale": {"type": "number", "minimum": 0.7, "maximum": 1.4},
+    "until": {"$ref": "#/$defs/at"},
+    "screen": {"type": "object",
+               "properties": {"source": {"type": "string"}, "in": {"type": "number", "minimum": 0},
+                              "x": {"type": "number", "minimum": 0, "maximum": 1}},
+               "additionalProperties": false}
+   },
+   "additionalProperties": false
+  },
+  "face": {
+   "type": "object",
+   "properties": {
+    "x": {"type": "number", "minimum": 0, "maximum": 1},
+    "zoom": {"type": "number", "minimum": 1, "maximum": 3},
+    "top": {"type": "integer", "minimum": 0, "maximum": 900}
+   },
+   "additionalProperties": false
+  },
+  "then": {"$ref": "#/$defs/card"},
+  "now": {"$ref": "#/$defs/card"},
+  "keyword": {
+   "type": "object", "required": ["at", "text"],
+   "properties": {"at": {"$ref": "#/$defs/at"}, "text": {"type": "string", "minLength": 1, "maxLength": 8},
+                  "trail": {"type": "string", "maxLength": 16}, "trail_at": {"$ref": "#/$defs/at"}},
+   "additionalProperties": false
+  },
+  "captions": {
+   "type": "array", "maxItems": 40,
+   "items": {"type": "object", "required": ["at", "text"],
+             "properties": {"at": {"$ref": "#/$defs/at"}, "until": {"$ref": "#/$defs/at"},
+                            "text": {"type": "string", "minLength": 1, "maxLength": 22}},
+             "additionalProperties": false}
+  },
+  "tail": {"type": "number", "minimum": 0, "maximum": 2},
+  "effects": {"anyOf": [{"type": "boolean"}, {"type": "object", "properties": {
+    "softer_db": {"type": "number", "minimum": 0, "maximum": 6}}, "additionalProperties": false}]},
+  "finish": {"type": "object", "properties": {"grain": {"type": "number", "minimum": 0, "maximum": 0.08}},
+             "additionalProperties": false},
+  "sound": {"type": "object"},
+  "brand": {"type": "object"}
+ },
+ "additionalProperties": false
+}

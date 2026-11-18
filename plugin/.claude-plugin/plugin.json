@@ -1,0 +1,9 @@
+{
+  "name": "bernard-studio",
+  "displayName": "Bernard Studio",
+  "version": "1.0.0",
+  "description": "A step-by-step studio in Claude Code: pick a style, pick your words, get a render, give notes, get a final file.",
+  "author": { "name": "Nulight" },
+  "license": "UNLICENSED",
+  "keywords": ["video", "reels", "carousels", "editing"]
+}

@@ -1,0 +1,41 @@
+#!/bin/bash
+# Bernard Studio launcher. On Claude's PATH while the plugin is on; also works as `bash plugin/bin/studio` from the repo.
+# doctor, install and needs are pure bash (setup/), because a clean Mac's python3 is only an installer stub.
+# Everything else runs in the studio's own Python: $STUDIO_HOME/venv/bin/python -m studio_engine "$@".
+
+# the plugin folder, from this script's real location (follows symlinks)
+src="${BASH_SOURCE[0]}"
+while [ -h "$src" ]; do
+  dir="$(cd -P "$(dirname "$src")" && pwd)"
+  src="$(readlink "$src")"
+  [[ "$src" != /* ]] && src="$dir/$src"
+done
+bin_dir="$(cd -P "$(dirname "$src")" && pwd)"
+export STUDIO_ROOT="${STUDIO_ROOT:-$(dirname "$bin_dir")}"
+export STUDIO_HOME="${STUDIO_HOME:-$HOME/Library/Application Support/Bernard Studio}"
+export STUDIO_USER="${STUDIO_USER:-$HOME/Movies/Bernard Studio}"
+export PLAYWRIGHT_BROWSERS_PATH="${PLAYWRIGHT_BROWSERS_PATH:-$STUDIO_HOME/ms-playwright}"
+export PATH="$STUDIO_HOME/bin:/opt/homebrew/bin:/usr/local/bin:$PATH"
+export PYTHONPATH="$STUDIO_ROOT/engine${PYTHONPATH:+:$PYTHONPATH}"
+export PYTHONDONTWRITEBYTECODE=1
+
+case "${1:-}" in
+  doctor|install|needs)
+    cmd="$1"
+    if [ "$cmd" = "install" ]; then script="$STUDIO_ROOT/setup/install.sh"; shift
+    elif [ "$cmd" = "doctor" ]; then script="$STUDIO_ROOT/setup/doctor.sh"; shift
+    else script="$STUDIO_ROOT/setup/doctor.sh"; fi        # needs <slug>: doctor.sh needs <slug>
+    if [ ! -f "$script" ]; then
+      echo "The setup step is not ready in this copy of Bernard Studio yet."
+      exit 3
+    fi
+    exec /bin/bash "$script" "$@"
+    ;;
+esac
+
+py="$STUDIO_HOME/venv/bin/python"
+if [ ! -x "$py" ]; then
+  echo "Bernard Studio isn't set up yet. Type /studio-setup."
+  exit 3
+fi
+exec "$py" -m studio_engine "$@"

@@ -1,0 +1,606 @@
+{
+ "about": "How every object in the library was made: one entry per object. 'src' is a Poly Haven model id (free, CC0) or a built-in mockup (mock:phone, mock:laptop, mock:cards) showing a picture of his own screen ('screen', a path relative to the specs file). Copy an entry, change 'id', 'src' and the angles, and run make_object.py to make a new one.",
+ "objects": [
+  {
+   "id": "lt_bold",
+   "src": "mock:laptop",
+   "screen": "screens/lt_bold.png",
+   "yaw": -28,
+   "elev": 16,
+   "open": 22,
+   "emit": 1.1,
+   "size": 640,
+   "samples": 24
+  },
+  {
+   "id": "ph_plan",
+   "src": "mock:phone",
+   "screen": "screens/ph_plan.png",
+   "rot": [
+    90,
+    0,
+    0
+   ],
+   "yaw": -14,
+   "elev": 8,
+   "emit": 1.1,
+   "size": 640,
+   "samples": 24
+  },
+  {
+   "id": "candles",
+   "src": "brass_candleholders",
+   "yaw": -25,
+   "elev": 15,
+   "only": [
+    "brass_candleholder_01"
+   ],
+   "size": 640,
+   "samples": 24
+  },
+  {
+   "id": "spectacles",
+   "src": "round_spectacles",
+   "yaw": -30,
+   "elev": 12,
+   "shadow": false,
+   "size": 640,
+   "samples": 24
+  },
+  {
+   "id": "pocketwatch",
+   "src": "pocket_watch",
+   "yaw": -25,
+   "elev": 15,
+   "size": 640,
+   "samples": 24
+  },
+  {
+   "id": "apple",
+   "src": "food_apple_01",
+   "yaw": -25,
+   "elev": 15,
+   "size": 640,
+   "samples": 24
+  },
+  {
+   "id": "buns",
+   "src": "hamburger_buns",
+   "yaw": -25,
+   "elev": 22,
+   "only": [
+    "hamburger_buns_01"
+   ],
+   "size": 640,
+   "samples": 24
+  },
+  {
+   "id": "box",
+   "src": "cardboard_box_01",
+   "yaw": -25,
+   "elev": 15,
+   "size": 640,
+   "samples": 24
+  },
+  {
+   "id": "chair_generic",
+   "src": "plastic_monobloc_chair_01",
+   "yaw": -25,
+   "elev": 15,
+   "size": 640,
+   "samples": 24
+  },
+  {
+   "id": "megaphone",
+   "src": "Megaphone_01",
+   "yaw": -25,
+   "elev": 15,
+   "size": 640,
+   "samples": 24
+  },
+  {
+   "id": "magnifier",
+   "src": "magnifying_glass_01",
+   "yaw": -25,
+   "elev": 10,
+   "rot": [
+    0,
+    35,
+    0
+   ],
+   "shadow": false,
+   "size": 640,
+   "samples": 24
+  },
+  {
+   "id": "frame1",
+   "src": "fancy_picture_frame_01",
+   "yaw": -25,
+   "elev": 15,
+   "size": 640,
+   "samples": 24
+  },
+  {
+   "id": "katana",
+   "src": "antique_katana_01",
+   "yaw": -25,
+   "elev": 8,
+   "rot": [
+    0,
+    50,
+    0
+   ],
+   "shadow": false,
+   "size": 640,
+   "samples": 24
+  },
+  {
+   "id": "chess",
+   "src": "chess_set",
+   "yaw": -35,
+   "elev": 28,
+   "size": 640,
+   "samples": 24
+  },
+  {
+   "id": "projector",
+   "src": "filmstrip_projector_8mm",
+   "yaw": -25,
+   "elev": 15,
+   "size": 640,
+   "samples": 24
+  },
+  {
+   "id": "cassette",
+   "src": "portable_cassette_player",
+   "yaw": -25,
+   "elev": 15,
+   "size": 640,
+   "samples": 24
+  },
+  {
+   "id": "camera",
+   "src": "Camera_01",
+   "yaw": -25,
+   "elev": 15,
+   "size": 640,
+   "samples": 24
+  },
+  {
+   "id": "register",
+   "src": "CashRegister_01",
+   "yaw": -25,
+   "elev": 15,
+   "size": 640,
+   "samples": 24
+  },
+  {
+   "id": "candlestick",
+   "src": "wooden_candlestick",
+   "yaw": -25,
+   "elev": 15,
+   "size": 640,
+   "samples": 24
+  },
+  {
+   "id": "stationery",
+   "src": "stationery_supplies",
+   "yaw": -25,
+   "elev": 45,
+   "size": 640,
+   "samples": 24
+  },
+  {
+   "id": "binder",
+   "src": "binder_notebook",
+   "yaw": -25,
+   "elev": 50,
+   "size": 640,
+   "samples": 24
+  },
+  {
+   "id": "postcards",
+   "src": "postcard_set_01",
+   "yaw": -25,
+   "elev": 15,
+   "size": 640,
+   "samples": 24
+  },
+  {
+   "id": "tape",
+   "src": "measuring_tape_01",
+   "yaw": -25,
+   "elev": 15,
+   "size": 640,
+   "samples": 24
+  },
+  {
+   "id": "cards",
+   "src": "mock:cards",
+   "aspect": 1.25,
+   "elev": 48,
+   "yaw": -10,
+   "cards": [
+    "screens/tpl_threerules_cream.png",
+    "screens/tpl_planharder.png",
+    "screens/tpl_bold.png"
+   ],
+   "fan": [
+    [
+     -0.32,
+     0.05,
+     9
+    ],
+    [
+     0.0,
+     0.0,
+     -2
+    ],
+    [
+     0.3,
+     -0.06,
+     -11
+    ]
+   ],
+   "size": 640,
+   "samples": 24
+  },
+  {
+   "id": "ph_bold",
+   "src": "mock:phone",
+   "screen": "screens/ph_bold.png",
+   "rot": [
+    90,
+    0,
+    0
+   ],
+   "yaw": -14,
+   "elev": 8,
+   "emit": 1.1,
+   "size": 640,
+   "samples": 24
+  },
+  {
+   "id": "spray",
+   "src": "spray_paint_bottles",
+   "yaw": -25,
+   "elev": 15,
+   "size": 640,
+   "samples": 24
+  },
+  {
+   "id": "lt_three",
+   "src": "mock:laptop",
+   "screen": "screens/lt_three.png",
+   "yaw": -28,
+   "elev": 16,
+   "open": 22,
+   "emit": 1.1,
+   "size": 640,
+   "samples": 24
+  },
+  {
+   "id": "notepads",
+   "src": "office_notepads",
+   "yaw": -25,
+   "elev": 60,
+   "size": 640,
+   "samples": 24
+  },
+  {
+   "id": "clipboard",
+   "src": "clipboard",
+   "yaw": -25,
+   "elev": 50,
+   "size": 640,
+   "samples": 24
+  },
+  {
+   "id": "clock",
+   "src": "alarm_clock_01",
+   "yaw": -25,
+   "elev": 15,
+   "size": 640,
+   "samples": 24
+  },
+  {
+   "id": "lt_plan",
+   "src": "mock:laptop",
+   "screen": "screens/lt_plan.png",
+   "yaw": -28,
+   "elev": 16,
+   "open": 22,
+   "emit": 1.1,
+   "size": 640,
+   "samples": 24
+  },
+  {
+   "id": "mantel",
+   "src": "mantel_clock_01",
+   "yaw": -25,
+   "elev": 15,
+   "size": 640,
+   "samples": 24
+  },
+  {
+   "id": "wristwatch",
+   "src": "digital_wrist_watch",
+   "yaw": -10,
+   "elev": 55,
+   "size": 640,
+   "samples": 24
+  },
+  {
+   "id": "bust",
+   "src": "marble_bust_01",
+   "yaw": -25,
+   "elev": 15,
+   "size": 640,
+   "samples": 24
+  },
+  {
+   "id": "chest",
+   "src": "treasure_chest",
+   "yaw": -25,
+   "elev": 15,
+   "size": 640,
+   "samples": 24
+  },
+  {
+   "id": "lt_feed",
+   "src": "mock:laptop",
+   "screen": "screens/lt_feed.png",
+   "yaw": -28,
+   "elev": 16,
+   "open": 22,
+   "emit": 1.1,
+   "size": 640,
+   "samples": 24
+  },
+  {
+   "id": "frame2",
+   "src": "fancy_picture_frame_02",
+   "yaw": -25,
+   "elev": 15,
+   "size": 640,
+   "samples": 24
+  },
+  {
+   "id": "lion",
+   "src": "lion_head",
+   "yaw": -25,
+   "elev": 15,
+   "size": 640,
+   "samples": 24
+  },
+  {
+   "id": "videocam",
+   "src": "vintage_video_camera",
+   "yaw": -25,
+   "elev": 15,
+   "size": 640,
+   "samples": 24
+  },
+  {
+   "id": "bulb",
+   "src": "lightbulb_01",
+   "yaw": -25,
+   "elev": 15,
+   "size": 640,
+   "samples": 24
+  },
+  {
+   "id": "suitcase",
+   "src": "vintage_suitcase",
+   "yaw": -25,
+   "elev": 15,
+   "size": 640,
+   "samples": 24
+  },
+  {
+   "id": "lt_cream",
+   "src": "mock:laptop",
+   "screen": "screens/lt_cream.png",
+   "yaw": -28,
+   "elev": 16,
+   "open": 22,
+   "emit": 1.1,
+   "size": 640,
+   "samples": 24
+  },
+  {
+   "id": "ph_li",
+   "src": "mock:phone",
+   "screen": "screens/ph_li.png",
+   "rot": [
+    90,
+    0,
+    0
+   ],
+   "yaw": -14,
+   "elev": 8,
+   "emit": 1.1,
+   "size": 640,
+   "samples": 24
+  },
+  {
+   "id": "vbino",
+   "src": "vintage_binocular",
+   "yaw": -25,
+   "elev": 15,
+   "size": 640,
+   "samples": 24
+  },
+  {
+   "id": "multimeter",
+   "src": "retro_multimeter",
+   "yaw": -25,
+   "elev": 15,
+   "size": 640,
+   "samples": 24
+  },
+  {
+   "id": "wallclock",
+   "src": "wall_clock",
+   "yaw": -25,
+   "elev": 15,
+   "size": 640,
+   "samples": 24
+  },
+  {
+   "id": "bino",
+   "src": "binoculars",
+   "yaw": -25,
+   "elev": 15,
+   "size": 640,
+   "samples": 24
+  },
+  {
+   "id": "radio",
+   "src": "vintage_radio_transceiver",
+   "yaw": -25,
+   "elev": 15,
+   "size": 640,
+   "samples": 24
+  },
+  {
+   "id": "schooldesk",
+   "src": "SchoolDesk_01",
+   "yaw": -25,
+   "elev": 15,
+   "size": 640,
+   "samples": 24
+  },
+  {
+   "id": "encyclopedia",
+   "src": "book_encyclopedia_set_01",
+   "yaw": -25,
+   "elev": 15,
+   "size": 640,
+   "samples": 24
+  },
+  {
+   "id": "payphone",
+   "src": "korean_public_payphone_01",
+   "yaw": -25,
+   "elev": 15,
+   "size": 640,
+   "samples": 24
+  },
+  {
+   "id": "seccam",
+   "src": "security_camera_01",
+   "yaw": -25,
+   "elev": 15,
+   "size": 640,
+   "samples": 24
+  },
+  {
+   "id": "desklamp",
+   "src": "desk_lamp_arm_01",
+   "yaw": -25,
+   "elev": 15,
+   "size": 640,
+   "samples": 24
+  },
+  {
+   "id": "microscope",
+   "src": "vintage_microscope",
+   "yaw": -25,
+   "elev": 15,
+   "size": 640,
+   "samples": 24
+  },
+  {
+   "id": "dartboard",
+   "src": "dartboard",
+   "yaw": -25,
+   "elev": 15,
+   "size": 640,
+   "samples": 24
+  },
+  {
+   "id": "grandfather",
+   "src": "vintage_grandfather_clock_01",
+   "yaw": -25,
+   "elev": 15,
+   "size": 640,
+   "samples": 24
+  },
+  {
+   "id": "mirror",
+   "src": "ornate_mirror_01",
+   "yaw": -25,
+   "elev": 15,
+   "size": 640,
+   "samples": 24
+  },
+  {
+   "id": "circuit",
+   "src": "circuit_board",
+   "yaw": -25,
+   "elev": 15,
+   "size": 640,
+   "samples": 24
+  },
+  {
+   "id": "telephone",
+   "src": "vintage_telephone_wall_clock",
+   "yaw": -25,
+   "elev": 15,
+   "size": 640,
+   "samples": 24
+  },
+  {
+   "id": "compass",
+   "src": "seadogs_compass",
+   "yaw": -25,
+   "elev": 15,
+   "size": 640,
+   "samples": 24
+  },
+  {
+   "id": "goblets",
+   "src": "brass_goblets",
+   "yaw": -25,
+   "elev": 15,
+   "size": 640,
+   "samples": 24
+  },
+  {
+   "id": "king",
+   "src": "chess_set",
+   "yaw": -25,
+   "elev": 8,
+   "only": [
+    "piece_king_black"
+   ],
+   "size": 640,
+   "samples": 24
+  },
+  {
+   "id": "woodchair",
+   "src": "WoodenChair_01",
+   "yaw": -25,
+   "elev": 15,
+   "size": 640,
+   "samples": 24
+  },
+  {
+   "id": "schoolchair",
+   "src": "SchoolChair_01",
+   "yaw": -25,
+   "elev": 15,
+   "size": 640,
+   "samples": 24
+  },
+  {
+   "id": "lifebuoy",
+   "src": "lifebuoy",
+   "yaw": -25,
+   "elev": 15,
+   "size": 640,
+   "samples": 24
+  }
+ ]
+}

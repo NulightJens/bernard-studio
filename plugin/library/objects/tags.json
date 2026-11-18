@@ -1,0 +1,1057 @@
+{
+ "about": "Real 3D objects rendered from free (CC0) Poly Haven models, plus phones and laptops showing his own templates and posts. can_stand_for lists what each object can stand for on a slide. ink_box is the object's own box inside the picture (left, top, right, bottom), used for sizing.",
+ "objects": {
+  "apple": {
+   "file": "apple.png",
+   "what": "a red apple",
+   "can_stand_for": [
+    "product",
+    "packaging",
+    "the obvious choice",
+    "simplicity",
+    "health"
+   ],
+   "ink_box": [
+    5,
+    5,
+    379,
+    337
+   ]
+  },
+  "binder": {
+   "file": "binder.png",
+   "what": "leather notebooks and a planner",
+   "can_stand_for": [
+    "notes",
+    "planning",
+    "journal",
+    "records",
+    "ideas"
+   ],
+   "ink_box": [
+    8,
+    5,
+    603,
+    334
+   ]
+  },
+  "bino": {
+   "file": "bino.png",
+   "what": "small black binoculars",
+   "can_stand_for": [
+    "seeing",
+    "research",
+    "spotting",
+    "visibility",
+    "watching the market"
+   ],
+   "ink_box": [
+    15,
+    5,
+    425,
+    183
+   ]
+  },
+  "box": {
+   "file": "box.png",
+   "what": "a taped cardboard box",
+   "can_stand_for": [
+    "packaging",
+    "shipping",
+    "the plain version",
+    "delivery"
+   ],
+   "ink_box": [
+    23,
+    5,
+    469,
+    388
+   ]
+  },
+  "bulb": {
+   "file": "bulb.png",
+   "what": "a clear light bulb",
+   "can_stand_for": [
+    "idea",
+    "insight",
+    "creativity",
+    "a lightbulb moment"
+   ],
+   "ink_box": [
+    5,
+    5,
+    290,
+    459
+   ]
+  },
+  "buns": {
+   "file": "buns.png",
+   "what": "a bread bun",
+   "can_stand_for": [
+    "the basic product",
+    "food",
+    "a system",
+    "the ordinary thing"
+   ],
+   "ink_box": [
+    17,
+    5,
+    411,
+    305
+   ]
+  },
+  "bust": {
+   "file": "bust.png",
+   "what": "a white marble bust",
+   "can_stand_for": [
+    "classic",
+    "timeless",
+    "reputation",
+    "quality",
+    "legacy"
+   ],
+   "ink_box": [
+    5,
+    5,
+    263,
+    502
+   ]
+  },
+  "camera": {
+   "file": "camera.png",
+   "what": "a vintage film camera",
+   "can_stand_for": [
+    "capture",
+    "photos",
+    "saving references",
+    "content"
+   ],
+   "ink_box": [
+    22,
+    5,
+    358,
+    255
+   ]
+  },
+  "candles": {
+   "file": "candles.png",
+   "what": "a single candle in a brass holder",
+   "can_stand_for": [
+    "mood",
+    "atmosphere",
+    "dark and moody",
+    "focus"
+   ],
+   "ink_box": [
+    11,
+    8,
+    155,
+    591
+   ]
+  },
+  "candlestick": {
+   "file": "candlestick.png",
+   "what": "a wooden candlestick",
+   "can_stand_for": [
+    "mood",
+    "style",
+    "warmth",
+    "tradition"
+   ],
+   "ink_box": [
+    18,
+    5,
+    239,
+    555
+   ]
+  },
+  "cards": {
+   "file": "cards.png",
+   "what": "printed quote cards in his brand (red and black)",
+   "can_stand_for": [
+    "templates",
+    "his brand",
+    "quote cards",
+    "posts"
+   ],
+   "ink_box": [
+    5,
+    5,
+    446,
+    361
+   ]
+  },
+  "cassette": {
+   "file": "cassette.png",
+   "what": "a cassette player and tape",
+   "can_stand_for": [
+    "music",
+    "taste",
+    "nostalgia",
+    "an album"
+   ],
+   "ink_box": [
+    8,
+    5,
+    478,
+    408
+   ]
+  },
+  "chair_generic": {
+   "file": "chair_generic.png",
+   "what": "a white plastic chair",
+   "can_stand_for": [
+    "generic",
+    "the same as everyone",
+    "cheap",
+    "ordinary"
+   ],
+   "ink_box": [
+    5,
+    5,
+    366,
+    521
+   ]
+  },
+  "chess": {
+   "file": "chess.png",
+   "what": "a chess board",
+   "can_stand_for": [
+    "strategy",
+    "contrast",
+    "thinking ahead",
+    "moves"
+   ],
+   "ink_box": [
+    14,
+    6,
+    601,
+    322
+   ]
+  },
+  "chest": {
+   "file": "chest.png",
+   "what": "an old treasure chest",
+   "can_stand_for": [
+    "value",
+    "saved content",
+    "treasure",
+    "a library"
+   ],
+   "ink_box": [
+    17,
+    5,
+    524,
+    391
+   ]
+  },
+  "circuit": {
+   "file": "circuit.png",
+   "what": "a circuit board",
+   "can_stand_for": [
+    "technology",
+    "AI",
+    "machines",
+    "automation"
+   ],
+   "ink_box": [
+    11,
+    5,
+    567,
+    218
+   ]
+  },
+  "clipboard": {
+   "file": "clipboard.png",
+   "what": "an empty clipboard",
+   "can_stand_for": [
+    "rules",
+    "checklist",
+    "a list",
+    "process"
+   ],
+   "ink_box": [
+    11,
+    5,
+    512,
+    451
+   ]
+  },
+  "clock": {
+   "file": "clock.png",
+   "what": "an alarm clock",
+   "can_stand_for": [
+    "routine",
+    "a set time",
+    "deadlines",
+    "habit"
+   ],
+   "ink_box": [
+    6,
+    5,
+    382,
+    488
+   ]
+  },
+  "compass": {
+   "file": "compass.png",
+   "what": "a brass compass",
+   "can_stand_for": [
+    "direction",
+    "positioning",
+    "finding your way"
+   ],
+   "ink_box": [
+    5,
+    5,
+    339,
+    387
+   ]
+  },
+  "dartboard": {
+   "file": "dartboard.png",
+   "what": "a dartboard",
+   "can_stand_for": [
+    "target",
+    "aim",
+    "precision",
+    "goals",
+    "the percentage"
+   ],
+   "ink_box": [
+    5,
+    5,
+    412,
+    435
+   ]
+  },
+  "desklamp": {
+   "file": "desklamp.png",
+   "what": "an orange desk lamp",
+   "can_stand_for": [
+    "work",
+    "designing",
+    "focus",
+    "the desk"
+   ],
+   "ink_box": [
+    5,
+    5,
+    198,
+    495
+   ]
+  },
+  "encyclopedia": {
+   "file": "encyclopedia.png",
+   "what": "a row of old encyclopedias",
+   "can_stand_for": [
+    "knowledge",
+    "a complete guide",
+    "reference",
+    "learning"
+   ],
+   "ink_box": [
+    18,
+    5,
+    588,
+    330
+   ]
+  },
+  "frame1": {
+   "file": "frame1.png",
+   "what": "a framed landscape painting",
+   "can_stand_for": [
+    "art",
+    "taste",
+    "what you love",
+    "inspiration"
+   ],
+   "ink_box": [
+    6,
+    5,
+    468,
+    422
+   ]
+  },
+  "frame2": {
+   "file": "frame2.png",
+   "what": "a framed painting of a building",
+   "can_stand_for": [
+    "gallery",
+    "a website",
+    "curation",
+    "art"
+   ],
+   "ink_box": [
+    5,
+    6,
+    392,
+    496
+   ]
+  },
+  "goblets": {
+   "file": "goblets.png",
+   "what": "brass goblets",
+   "can_stand_for": [
+    "proof",
+    "celebration",
+    "winning",
+    "value"
+   ],
+   "ink_box": [
+    6,
+    5,
+    429,
+    356
+   ]
+  },
+  "grandfather": {
+   "file": "grandfather.png",
+   "what": "a grandfather clock",
+   "can_stand_for": [
+    "years of experience",
+    "time",
+    "patience",
+    "legacy"
+   ],
+   "ink_box": [
+    9,
+    5,
+    211,
+    602
+   ]
+  },
+  "katana": {
+   "file": "katana.png",
+   "what": "a katana sword",
+   "can_stand_for": [
+    "discipline",
+    "precision",
+    "mastery",
+    "samurai",
+    "cutting"
+   ],
+   "ink_box": [
+    5,
+    5,
+    399,
+    386
+   ]
+  },
+  "king": {
+   "file": "king.png",
+   "what": "a chess king",
+   "can_stand_for": [
+    "the founder",
+    "leadership",
+    "one person",
+    "control"
+   ],
+   "ink_box": [
+    25,
+    5,
+    247,
+    554
+   ]
+  },
+  "lifebuoy": {
+   "file": "lifebuoy.png",
+   "what": "a red and white lifebuoy",
+   "can_stand_for": [
+    "safety",
+    "a human in the loop",
+    "rescue",
+    "support"
+   ],
+   "ink_box": [
+    6,
+    5,
+    383,
+    437
+   ]
+  },
+  "lion": {
+   "file": "lion.png",
+   "what": "a bronze lion head",
+   "can_stand_for": [
+    "strength",
+    "looking big",
+    "confidence",
+    "presence"
+   ],
+   "ink_box": [
+    5,
+    5,
+    324,
+    518
+   ]
+  },
+  "lt_bold": {
+   "file": "lt_bold.png",
+   "what": "a laptop showing his red 'A bold opinion in five words' template",
+   "can_stand_for": [
+    "his templates",
+    "design",
+    "Canva",
+    "his brand"
+   ],
+   "ink_box": [
+    5,
+    5,
+    530,
+    412
+   ]
+  },
+  "lt_cream": {
+   "file": "lt_cream.png",
+   "what": "a laptop showing his cream 'Three rules' template",
+   "can_stand_for": [
+    "his templates",
+    "rules",
+    "Canva"
+   ],
+   "ink_box": [
+    5,
+    5,
+    530,
+    412
+   ]
+  },
+  "lt_feed": {
+   "file": "lt_feed.png",
+   "what": "a laptop showing his LinkedIn feed",
+   "can_stand_for": [
+    "LinkedIn",
+    "his posts",
+    "consistency",
+    "presence"
+   ],
+   "ink_box": [
+    5,
+    5,
+    530,
+    412
+   ]
+  },
+  "lt_plan": {
+   "file": "lt_plan.png",
+   "what": "a laptop showing his 'Plan harder. Move' template",
+   "can_stand_for": [
+    "his templates",
+    "the library",
+    "editing",
+    "Canva"
+   ],
+   "ink_box": [
+    5,
+    5,
+    530,
+    412
+   ]
+  },
+  "lt_three": {
+   "file": "lt_three.png",
+   "what": "a laptop showing his red 'Three rules' template",
+   "can_stand_for": [
+    "his templates",
+    "exporting",
+    "Canva"
+   ],
+   "ink_box": [
+    5,
+    5,
+    530,
+    412
+   ]
+  },
+  "magnifier": {
+   "file": "magnifier.png",
+   "what": "a magnifying glass",
+   "can_stand_for": [
+    "looking closely",
+    "research",
+    "can't tell the difference",
+    "detail"
+   ],
+   "ink_box": [
+    5,
+    5,
+    280,
+    383
+   ]
+  },
+  "mantel": {
+   "file": "mantel.png",
+   "what": "a wooden mantel clock",
+   "can_stand_for": [
+    "time saved",
+    "minutes",
+    "routine",
+    "speed"
+   ],
+   "ink_box": [
+    14,
+    5,
+    560,
+    328
+   ]
+  },
+  "megaphone": {
+   "file": "megaphone.png",
+   "what": "a megaphone",
+   "can_stand_for": [
+    "your message",
+    "announcing",
+    "being heard",
+    "voice"
+   ],
+   "ink_box": [
+    5,
+    5,
+    450,
+    323
+   ]
+  },
+  "microscope": {
+   "file": "microscope.png",
+   "what": "a microscope",
+   "can_stand_for": [
+    "research",
+    "analysis",
+    "detail",
+    "study"
+   ],
+   "ink_box": [
+    26,
+    5,
+    204,
+    577
+   ]
+  },
+  "mirror": {
+   "file": "mirror.png",
+   "what": "a tall gold mirror",
+   "can_stand_for": [
+    "copying",
+    "reflection",
+    "self-image",
+    "style versus taste"
+   ],
+   "ink_box": [
+    14,
+    5,
+    327,
+    529
+   ]
+  },
+  "multimeter": {
+   "file": "multimeter.png",
+   "what": "a multimeter",
+   "can_stand_for": [
+    "reporting",
+    "measuring",
+    "numbers",
+    "metrics"
+   ],
+   "ink_box": [
+    30,
+    5,
+    325,
+    489
+   ]
+  },
+  "notepads": {
+   "file": "notepads.png",
+   "what": "scattered sticky notes",
+   "can_stand_for": [
+    "ideas",
+    "notes",
+    "drafts",
+    "planning"
+   ],
+   "ink_box": [
+    6,
+    5,
+    577,
+    444
+   ]
+  },
+  "payphone": {
+   "file": "payphone.png",
+   "what": "a payphone",
+   "can_stand_for": [
+    "a call",
+    "escalation",
+    "when to call me",
+    "contact"
+   ],
+   "ink_box": [
+    8,
+    5,
+    290,
+    544
+   ]
+  },
+  "ph_bold": {
+   "file": "ph_bold.png",
+   "what": "a phone showing his red 'A bold opinion in five words' template",
+   "can_stand_for": [
+    "his brand",
+    "brand kit",
+    "posts",
+    "mobile"
+   ],
+   "ink_box": [
+    16,
+    5,
+    288,
+    563
+   ]
+  },
+  "ph_cream": {
+   "file": "ph_cream.png",
+   "what": "a phone showing his cream 'Three rules I live by' template",
+   "can_stand_for": [
+    "quote cards",
+    "posts",
+    "his templates"
+   ],
+   "ink_box": [
+    16,
+    5,
+    288,
+    563
+   ]
+  },
+  "ph_li": {
+   "file": "ph_li.png",
+   "what": "a phone showing his LinkedIn post 'Presence is strategy'",
+   "can_stand_for": [
+    "LinkedIn",
+    "presence",
+    "his posts"
+   ],
+   "ink_box": [
+    16,
+    5,
+    288,
+    563
+   ]
+  },
+  "ph_plan": {
+   "file": "ph_plan.png",
+   "what": "a phone showing his 'Plan harder. Move' template",
+   "can_stand_for": [
+    "his templates",
+    "action",
+    "posts"
+   ],
+   "ink_box": [
+    16,
+    5,
+    288,
+    563
+   ]
+  },
+  "pocketwatch": {
+   "file": "pocketwatch.png",
+   "what": "a gold pocket watch",
+   "can_stand_for": [
+    "time",
+    "patience",
+    "timing",
+    "experience"
+   ],
+   "ink_box": [
+    5,
+    5,
+    349,
+    482
+   ]
+  },
+  "postcards": {
+   "file": "postcards.png",
+   "what": "a wall of postcards",
+   "can_stand_for": [
+    "references",
+    "inspiration",
+    "pick two",
+    "history",
+    "collection"
+   ],
+   "ink_box": [
+    5,
+    4,
+    454,
+    428
+   ]
+  },
+  "projector": {
+   "file": "projector.png",
+   "what": "a film projector",
+   "can_stand_for": [
+    "a show",
+    "film",
+    "story",
+    "what made you lean in"
+   ],
+   "ink_box": [
+    19,
+    5,
+    327,
+    374
+   ]
+  },
+  "radio": {
+   "file": "radio.png",
+   "what": "an old field radio",
+   "can_stand_for": [
+    "first replies",
+    "communication",
+    "signals"
+   ],
+   "ink_box": [
+    6,
+    5,
+    424,
+    338
+   ]
+  },
+  "register": {
+   "file": "register.png",
+   "what": "a cash register",
+   "can_stand_for": [
+    "price",
+    "cost",
+    "money",
+    "a subscription",
+    "revenue"
+   ],
+   "ink_box": [
+    23,
+    5,
+    401,
+    454
+   ]
+  },
+  "schoolchair": {
+   "file": "schoolchair.png",
+   "what": "a school chair",
+   "can_stand_for": [
+    "a seat",
+    "a role",
+    "AI in a seat",
+    "learning"
+   ],
+   "ink_box": [
+    16,
+    6,
+    361,
+    537
+   ]
+  },
+  "schooldesk": {
+   "file": "schooldesk.png",
+   "what": "a school desk",
+   "can_stand_for": [
+    "training",
+    "learning",
+    "a junior hire"
+   ],
+   "ink_box": [
+    5,
+    5,
+    437,
+    515
+   ]
+  },
+  "seccam": {
+   "file": "seccam.png",
+   "what": "a security camera",
+   "can_stand_for": [
+    "monitoring",
+    "watching spend",
+    "flags",
+    "oversight"
+   ],
+   "ink_box": [
+    15,
+    5,
+    337,
+    232
+   ]
+  },
+  "spectacles": {
+   "file": "spectacles.png",
+   "what": "round glasses",
+   "can_stand_for": [
+    "vision",
+    "clarity",
+    "reading",
+    "seeing it clearly"
+   ],
+   "ink_box": [
+    5,
+    5,
+    511,
+    199
+   ]
+  },
+  "spray": {
+   "file": "spray.png",
+   "what": "two cans of spray paint",
+   "can_stand_for": [
+    "colors",
+    "brand colors",
+    "painting",
+    "style"
+   ],
+   "ink_box": [
+    12,
+    6,
+    346,
+    536
+   ]
+  },
+  "stationery": {
+   "file": "stationery.png",
+   "what": "pens and an ink pot",
+   "can_stand_for": [
+    "writing",
+    "ink and paper",
+    "copy",
+    "drafts"
+   ],
+   "ink_box": [
+    5,
+    5,
+    485,
+    292
+   ]
+  },
+  "suitcase": {
+   "file": "suitcase.png",
+   "what": "two vintage suitcases",
+   "can_stand_for": [
+    "delivery",
+    "packing",
+    "travel",
+    "the package"
+   ],
+   "ink_box": [
+    15,
+    5,
+    567,
+    261
+   ]
+  },
+  "tape": {
+   "file": "tape.png",
+   "what": "a tape measure",
+   "can_stand_for": [
+    "spacing",
+    "rules",
+    "measuring",
+    "standards"
+   ],
+   "ink_box": [
+    5,
+    5,
+    292,
+    310
+   ]
+  },
+  "telephone": {
+   "file": "telephone.png",
+   "what": "an old red wall telephone",
+   "can_stand_for": [
+    "the call",
+    "clients",
+    "getting the call"
+   ],
+   "ink_box": [
+    19,
+    5,
+    361,
+    509
+   ]
+  },
+  "vbino": {
+   "file": "vbino.png",
+   "what": "vintage binoculars",
+   "can_stand_for": [
+    "visibility",
+    "looking ahead",
+    "being seen",
+    "research"
+   ],
+   "ink_box": [
+    18,
+    5,
+    517,
+    262
+   ]
+  },
+  "videocam": {
+   "file": "videocam.png",
+   "what": "a vintage movie camera",
+   "can_stand_for": [
+    "video",
+    "content",
+    "recording",
+    "masterclasses"
+   ],
+   "ink_box": [
+    16,
+    5,
+    329,
+    451
+   ]
+  },
+  "wallclock": {
+   "file": "wallclock.png",
+   "what": "a wall clock",
+   "can_stand_for": [
+    "scheduling",
+    "time",
+    "a deadline"
+   ],
+   "ink_box": [
+    5,
+    5,
+    410,
+    429
+   ]
+  },
+  "woodchair": {
+   "file": "woodchair.png",
+   "what": "a tall carved wooden chair",
+   "can_stand_for": [
+    "a coordinator",
+    "a seat",
+    "authority"
+   ],
+   "ink_box": [
+    16,
+    5,
+    216,
+    597
+   ]
+  },
+  "wristwatch": {
+   "file": "wristwatch.png",
+   "what": "a silver wristwatch",
+   "can_stand_for": [
+    "time",
+    "punctuality",
+    "minutes"
+   ],
+   "ink_box": [
+    12,
+    6,
+    153,
+    504
+   ]
+  }
+ }
+}

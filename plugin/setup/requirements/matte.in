@@ -1,0 +1,11 @@
+# Matting (BiRefNet HR) and forced alignment (wav2vec2 MMS_FA). Apple silicon only (torch has no Intel Mac wheels).
+# Compile: MACOSX_DEPLOYMENT_TARGET=14.0 uv pip compile matte.in -c base.txt --python-platform aarch64-apple-darwin --python-version 3.12 --generate-hashes -o matte.txt
+torch==2.15.0
+torchvision==0.29.2
+torchaudio==2.11.1
+transformers==4.57.6
+timm==1.0.31
+einops==0.8.2
+kornia==0.9.2
+safetensors==0.8.0
+huggingface-hub==0.36.2

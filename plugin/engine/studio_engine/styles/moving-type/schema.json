@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Moving type settings",
+  "type": "object",
+  "required": ["style", "beats"],
+  "additionalProperties": false,
+  "properties": {
+    "style": {"const": "moving-type"},
+    "spec_version": {"const": 1},
+    "passage": {"type": "string"},
+    "format": {"type": "object", "properties": {"fps": {"enum": [24, 25, 30]}}, "additionalProperties": false},
+    "brand": {"type": "object"},
+    "beats": {
+      "type": "array", "minItems": 2, "maxItems": 12,
+      "items": {
+        "type": "object",
+        "required": ["lines"],
+        "additionalProperties": false,
+        "properties": {
+          "kind": {"const": "stop"},
+          "keep": {"type": "boolean"},
+          "lines": {
+            "type": "array", "minItems": 1, "maxItems": 4,
+            "items": {
+              "type": "object",
+              "required": ["text"],
+              "additionalProperties": false,
+              "properties": {
+                "text": {"type": "string", "minLength": 1, "maxLength": 40},
+                "look": {"enum": ["strong", "italic", "serif", "label", "number", "typed"]},
+                "size": {"type": "number", "minimum": 30, "maximum": 460},
+                "at": {"$ref": "#/$defs/at"},
+                "x": {"type": "number", "minimum": -400, "maximum": 400},
+                "y": {"type": "number"}
+              }
+            }
+          },
+          "camera": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "lead": {"type": "number", "minimum": 0.1, "maximum": 1.2},
+              "arrive": {"type": "number", "minimum": -0.5, "maximum": 0.3},
+              "width": {"type": "number", "minimum": 500, "maximum": 900},
+              "land": {"$ref": "#/$defs/view"},
+              "leave": {"$ref": "#/$defs/view"},
+              "keys": {"type": "array", "maxItems": 4,
+                       "items": {"allOf": [{"$ref": "#/$defs/view"}, {"required": ["at"]}]}}
+            }
+          }
+        }
+      }
+    },
+    "poster": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "strike": {"type": "string"},
+        "underline": {"type": "string"},
+        "from": {"type": "integer", "minimum": 0},
+        "at": {"$ref": "#/$defs/at"},
+        "hold": {"type": "number", "minimum": 0.8, "maximum": 4}
+      }
+    },
+    "sound": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "bed": {"anyOf": [{"type": "string"}, {"type": "object", "required": ["name"]}]},
+        "sfx": {"type": "array", "items": {"type": "object", "required": ["name"]}}
+      }
+    }
+  },
+  "$defs": {
+    "at": {"anyOf": [{"type": "integer", "minimum": 0}, {"type": "number"}, {"type": "object"}]},
+    "view": {
+      "type": "object",
+      "properties": {
+        "at": {"$ref": "#/$defs/at"},
+        "zoom": {"type": "number", "minimum": 0.7, "maximum": 1.4},
+        "dy": {"type": "number", "minimum": -300, "maximum": 300},
+        "roll": {"type": "number", "minimum": -3, "maximum": 3}
+      },
+      "additionalProperties": false
+    }
+  }
+}

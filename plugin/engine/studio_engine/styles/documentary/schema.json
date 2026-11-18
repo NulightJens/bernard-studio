@@ -1,0 +1,82 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "type": "object",
+ "required": ["style", "spec_version", "shots"],
+ "$defs": {
+  "at": {"anyOf": [{"type": "integer", "minimum": 0}, {"type": "number"},
+                   {"type": "object", "properties": {"word": {"type": "integer", "minimum": 0}, "t": {"type": "number"},
+                    "edge": {"enum": ["start", "end", "mid"]}, "offset": {"type": "number"}}, "additionalProperties": false}]},
+  "frame": {"type": "object",
+            "properties": {"x": {"type": "number", "minimum": 0, "maximum": 1},
+                           "y": {"type": "number", "minimum": 0, "maximum": 1},
+                           "zoom": {"type": "number", "minimum": 0.5, "maximum": 4}},
+            "additionalProperties": false}
+ },
+ "properties": {
+  "style": {"const": "documentary"},
+  "spec_version": {"const": 1},
+  "passage": {"type": "string"},
+  "format": {"type": "object"},
+  "sources": {"type": "object", "additionalProperties": {"type": "string"}},
+  "shots": {
+   "type": "array", "minItems": 1, "maxItems": 12,
+   "items": {
+    "type": "object",
+    "properties": {
+     "from": {"$ref": "#/$defs/at"},
+     "source": {"type": "string"},
+     "in": {"type": "number", "minimum": 0},
+     "speed": {"type": "number", "minimum": 0.25, "maximum": 4},
+     "start": {"$ref": "#/$defs/frame"},
+     "end": {"$ref": "#/$defs/frame"},
+     "tone": {"enum": ["face", "screen"]}
+    },
+    "additionalProperties": false
+   }
+  },
+  "figure": {
+   "type": "object",
+   "required": ["text"],
+   "properties": {
+    "text": {"type": "string", "minLength": 1, "maxLength": 10},
+    "line": {"type": "string", "minLength": 1, "maxLength": 28},
+    "at": {"$ref": "#/$defs/at"},
+    "underline": {"$ref": "#/$defs/at"},
+    "size": {"type": "integer", "minimum": 120, "maximum": 300},
+    "to": {
+     "type": "object",
+     "required": ["text", "at"],
+     "properties": {
+      "text": {"type": "string", "minLength": 1, "maxLength": 10},
+      "unit": {"type": "string", "minLength": 1, "maxLength": 12},
+      "line": {"type": "string", "minLength": 1, "maxLength": 28},
+      "at": {"$ref": "#/$defs/at"}
+     },
+     "additionalProperties": false
+    }
+   },
+   "additionalProperties": false
+  },
+  "subtitles": {
+   "type": "array", "minItems": 1,
+   "items": {"type": "object", "required": ["from", "to"],
+             "properties": {"from": {"type": "integer", "minimum": 0}, "to": {"type": "integer", "minimum": 0}},
+             "additionalProperties": false}
+  },
+  "close": {
+   "type": "object", "required": ["text", "at"],
+   "properties": {"text": {"type": "string", "minLength": 1, "maxLength": 28}, "at": {"$ref": "#/$defs/at"}},
+   "additionalProperties": false
+  },
+  "lower_third": {"anyOf": [{"const": false}, {"type": "object",
+   "properties": {"at": {"$ref": "#/$defs/at"}, "title": {"type": "string", "maxLength": 40}},
+   "additionalProperties": false}]},
+  "mark": {"anyOf": [{"const": false}, {"type": "object",
+   "properties": {"reel": {"type": "integer", "minimum": 1, "maximum": 99}}, "additionalProperties": false}]},
+  "film_sound": {"type": "boolean"},
+  "grain": {"type": "number", "minimum": 0, "maximum": 0.08},
+  "sound": {"type": "object"},
+  "brand": {"type": "object"}
+ },
+ "additionalProperties": false
+}

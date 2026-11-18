@@ -1,0 +1,7 @@
+# Bernard Studio base engine (Python 3.12). Compile: uv pip compile base.in --universal --python-version 3.12 --generate-hashes -o base.txt
+numpy==2.5.5
+scipy==1.18.1
+pillow==13.0.0
+opencv-python-headless==5.0.0.93
+jsonschema==4.26.0
+ocrmac==1.0.1 ; sys_platform == "darwin"

@@ -1,0 +1,183 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Zen garden settings",
+  "type": "object",
+  "required": [
+    "style",
+    "beats",
+    "captions"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "style": {
+      "const": "zen-garden"
+    },
+    "spec_version": {
+      "const": 1
+    },
+    "passage": {
+      "type": "string"
+    },
+    "format": {
+      "type": "object",
+      "properties": {
+        "fps": {
+          "enum": [
+            24,
+            25,
+            30
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "brand": {
+      "type": "object"
+    },
+    "beats": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "required": [
+          "kind"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "kind": {
+            "enum": [
+              "feed",
+              "stones",
+              "rise"
+            ]
+          },
+          "flick": {
+            "$ref": "#/$defs/at"
+          },
+          "land": {
+            "$ref": "#/$defs/at"
+          },
+          "light": {
+            "type": "array",
+            "maxItems": 3,
+            "items": {
+              "type": "object",
+              "required": [
+                "to",
+                "at"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "to": {
+                  "enum": [
+                    "above",
+                    "below",
+                    "here"
+                  ]
+                },
+                "at": {
+                  "$ref": "#/$defs/at"
+                }
+              }
+            }
+          },
+          "go": {
+            "$ref": "#/$defs/at"
+          },
+          "arrive": {
+            "$ref": "#/$defs/at"
+          },
+          "rings": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 4,
+            "items": {
+              "$ref": "#/$defs/at"
+            }
+          },
+          "at": {
+            "$ref": "#/$defs/at"
+          },
+          "up": {
+            "$ref": "#/$defs/at"
+          },
+          "ring": {
+            "$ref": "#/$defs/at"
+          }
+        }
+      }
+    },
+    "captions": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 12,
+      "items": {
+        "type": "object",
+        "required": [
+          "text"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "text": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 60
+          },
+          "at": {
+            "$ref": "#/$defs/at"
+          }
+        }
+      }
+    },
+    "hold": {
+      "type": "number",
+      "minimum": 0.8,
+      "maximum": 4
+    },
+    "sound": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "bed": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "object",
+              "required": [
+                "name"
+              ]
+            }
+          ]
+        },
+        "sfx": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "name"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "at": {
+      "anyOf": [
+        {
+          "type": "integer",
+          "minimum": 0
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "object"
+        }
+      ]
+    }
+  }
+}

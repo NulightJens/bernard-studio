@@ -1,0 +1,24 @@
+{
+ "style": "your-feed",
+ "spec_version": 1,
+ "passage": "passage/passage.json",
+ "format": {"fps": 30},
+ "sources": {"screen": "sources/screen.mp4"},
+ "posts": {
+  "first": {"source": "screen", "at": 476.0, "point": [300, 600],
+            "picture": [0.261733, 0.275626, 0.700361, 0.665148]},
+  "second": {"source": "screen", "at": 484.0, "point": [680, 600],
+             "picture": [0.005415, 0.277904, 0.994585, 0.741458]}
+ },
+ "scroll": {"at": {"word": 0, "offset": 0.03}, "land": {"word": 6, "offset": -0.19}, "click": {"word": 6, "offset": -0.04}},
+ "back": {"at": {"word": 7, "offset": -0.05}, "label": {"word": 8, "offset": 0.25},
+          "above": {"word": 11, "offset": -0.1}, "below": {"word": 16, "offset": 0.1}, "same": {"word": 17, "offset": 0.05},
+          "caption": {"text": "looks like", "at": {"word": 17, "offset": 0.3}}},
+ "zoom": {"at": {"word": 18, "offset": -0.01},
+          "focus": {"x": 0.480144, "y": 0.479499, "scale": 2.3},
+          "title": {"small": "YOUR BRAND", "big": "already exists"},
+          "frame": {"box": [0.020576, 0.45614, 0.987654, 0.991228], "at": {"word": 23, "offset": 0.05}}},
+ "lift": {"at": {"word": 27}, "pull": {"word": 31, "offset": -0.05}, "red": {"word": 34, "offset": -0.05},
+          "rule_y": 0.314496},
+ "sound": {"bed": "feed"}
+}

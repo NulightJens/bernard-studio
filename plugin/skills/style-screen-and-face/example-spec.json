@@ -1,0 +1,213 @@
+{
+ "style": "screen-and-face",
+ "spec_version": 1,
+ "passage": "passage/passage.json",
+ "sources": {
+  "screen": "sources/screen.mp4"
+ },
+ "face": {
+  "x": 0.4896,
+  "y": 0.0278,
+  "zoom": 1.1868
+ },
+ "screens": [
+  {
+   "source": "screen",
+   "from": {
+    "word": 0
+   },
+   "in": 150.653,
+   "out": 155.25,
+   "speed": 0.8,
+   "push": [
+    1.0,
+    1.05
+   ],
+   "origin": "40% 55%"
+  },
+  {
+   "source": "screen",
+   "from": {
+    "word": 13,
+    "offset": -0.52
+   },
+   "in": 292.52,
+   "out": 295.48,
+   "speed": 0.9,
+   "push": [
+    1.02,
+    1.07
+   ],
+   "origin": "45% 50%"
+  },
+  {
+   "source": "screen",
+   "from": {
+    "word": 24,
+    "offset": -0.014
+   },
+   "in": 198.02,
+   "out": 202.19,
+   "push": [
+    1.08,
+    1.12
+   ],
+   "origin": "30% 40%"
+  },
+  {
+   "source": "screen",
+   "from": {
+    "word": 29,
+    "offset": 0.117
+   },
+   "in": 200.853,
+   "out": 202.19,
+   "push": [
+    1.1,
+    1.15
+   ],
+   "origin": "25% 45%"
+  },
+  {
+   "source": "screen",
+   "from": {
+    "word": 33,
+    "offset": -0.106
+   },
+   "in": 300.98,
+   "out": 316.3,
+   "speed": 2.0,
+   "push": [
+    1.04,
+    1.09
+   ],
+   "origin": "50% 45%"
+  }
+ ],
+ "beats": [
+  {
+   "kind": "figure",
+   "at": {
+    "word": 0
+   },
+   "text": "$40,000",
+   "lines": [
+    {
+     "text": "from an agency,"
+    },
+    {
+     "text": "2019"
+    }
+   ],
+   "rule": {
+    "word": 7,
+    "offset": 0.035
+   },
+   "strike": {
+    "word": 24,
+    "offset": -0.014
+   },
+   "until": {
+    "word": 26,
+    "offset": -0.025
+   }
+  },
+  {
+   "kind": "figure",
+   "at": {
+    "word": 27,
+    "offset": -0.094
+   },
+   "text": "$20",
+   "lines": [
+    {
+     "text": "a month",
+     "at": {
+      "word": 28,
+      "offset": -0.051
+     }
+    },
+    {
+     "text": "+ a conversation",
+     "at": {
+      "word": 32,
+      "offset": 0.02
+     }
+    }
+   ],
+   "until": {
+    "word": 39,
+    "offset": -0.118
+   }
+  },
+  {
+   "kind": "figure",
+   "at": {
+    "word": 39,
+    "offset": 0.09
+   },
+   "text": "50",
+   "lines": [
+    {
+     "text": "templates,",
+     "at": {
+      "word": 40,
+      "offset": -0.104
+     }
+    },
+    {
+     "text": "all on brand",
+     "at": {
+      "word": 41,
+      "offset": -0.141
+     }
+    }
+   ],
+   "underline": {
+    "word": 42,
+    "offset": 0.035
+   }
+  }
+ ],
+ "sound": {
+  "bed": {
+   "name": "drone",
+   "under_db": 18
+  },
+  "sfx": [
+   {
+    "name": "impact",
+    "at": {
+     "word": 7,
+     "offset": 0.155
+    },
+    "under_db": 27,
+    "len": 1.6
+   },
+   {
+    "name": "brush",
+    "at": {
+     "word": 24,
+     "offset": -0.014
+    },
+    "under_db": 26,
+    "len": 0.7
+   },
+   {
+    "name": "card",
+    "at": {
+     "word": 39,
+     "offset": 0.13
+    },
+    "under_db": 28,
+    "len": 0.5
+   }
+  ]
+ },
+ "join_sound": {
+  "name": "whoosh",
+  "under_db": 29,
+  "len": 0.9,
+  "offset": -0.08
+ }
+}

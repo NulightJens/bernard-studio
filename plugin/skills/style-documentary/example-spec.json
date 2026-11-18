@@ -1,0 +1,49 @@
+{
+ "style": "documentary",
+ "spec_version": 1,
+ "passage": "passage/passage.json",
+ "sources": {"broll": "sources/broll.mov"},
+ "shots": [
+  {"from": {"word": 0}, "source": "broll", "in": 0.12,
+   "start": {"x": 0.4688, "y": 0.5185, "zoom": 1.1294}, "end": {"x": 0.4479, "y": 0.5185, "zoom": 1.2632}},
+  {"from": {"word": 7, "offset": -0.02},
+   "start": {"x": 0.4948, "y": 0.3148, "zoom": 1.6696}, "end": {"x": 0.4948, "y": 0.3056, "zoom": 1.8641}},
+  {"from": {"word": 13, "offset": -0.25},
+   "start": {"x": 0.5417, "y": 0.3704, "zoom": 1.4545}, "end": {"x": 0.4583, "y": 0.3704, "zoom": 1.4545}},
+  {"from": {"word": 24, "offset": -0.02}, "source": "broll", "in": 9.6,
+   "start": {"x": 0.4479, "y": 0.3704, "zoom": 1.28}, "end": {"x": 0.4167, "y": 0.3519, "zoom": 1.4769}},
+  {"from": {"word": 30, "offset": -0.02},
+   "start": {"x": 0.4948, "y": 0.2778, "zoom": 2.0}, "end": {"x": 0.4948, "y": 0.2685, "zoom": 2.2326}}
+ ],
+ "figure": {
+  "text": "$40,000",
+  "line": "FROM AN AGENCY, 2019",
+  "underline": {"word": 21},
+  "size": 190,
+  "to": {"text": "$20", "unit": "/ month", "line": "NOW", "at": {"word": 27, "offset": -0.02}}
+ },
+ "subtitles": [
+  {"from": 0, "to": 2}, {"from": 3, "to": 7}, {"from": 8, "to": 12}, {"from": 13, "to": 15},
+  {"from": 16, "to": 20}, {"from": 21, "to": 23}, {"from": 24, "to": 29}, {"from": 30, "to": 32}
+ ],
+ "close": {"text": "+ a conversation.", "at": {"word": 32}},
+ "mark": {"reel": 1},
+ "sound": {
+  "bed": {
+   "name": "documentary", "under_db": 16.5,
+   "changes": [{"word": 13}, {"word": 24}],
+   "mallets": [
+    {"t": 0.3, "note": "D4", "gain_db": -4},
+    {"at": {"word": 7, "offset": -0.02}, "note": "A3", "gain_db": -2},
+    {"at": {"word": 21}, "note": "F3", "gain_db": -5},
+    {"at": {"word": 27, "offset": -0.02}, "note": "C4", "gain_db": -3},
+    {"at": {"word": 32}, "note": "F4", "gain_db": 0},
+    {"at": {"word": 32, "offset": 0.02}, "note": "C5", "gain_db": -6}
+   ]
+  },
+  "sfx": [
+   {"name": "sub-hit", "at": {"word": 7, "offset": -0.02}, "under_db": 28},
+   {"name": "noise-swell", "at": {"word": 27, "offset": -0.92}, "under_db": 32}
+  ]
+ }
+}

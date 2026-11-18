@@ -1,0 +1,56 @@
+{
+ "style": "prompt-pack",
+ "spec_version": 1,
+ "passage": "passage/passage.json",
+ "number": "01",
+ "title": "A $40,000\nbrand kit in\nthree prompts.",
+ "title_italic": "prompts.",
+ "cover": {
+  "rings_until": {
+   "word": 10,
+   "edge": "mid"
+  },
+  "lines_until": {
+   "word": 35,
+   "edge": "mid"
+  }
+ },
+ "prompts": [
+  {
+   "heading": "The brand guide.",
+   "heading_italic": "guide.",
+   "sub": "Start with your two visual inspirations.",
+   "tool": "Claude Design",
+   "text": "I'm building a personal brand. My aesthetic is inspired by [your two inspirations]. I want dark, moody, minimal. Colors should feel like ink on cream paper with blood red accents. Build me a complete brand guide with color palette, typography, spacing and visual rules.",
+   "mark": "[your two inspirations]",
+   "tip_label": "THEN",
+   "tip": "Drag your screenshots right into the chat."
+  },
+  {
+   "heading": "Fifty templates.",
+   "heading_italic": "templates.",
+   "sub": "A library you can pull from each time you create.",
+   "tool": "Claude Design",
+   "text": "Using my brand guide, create 50 social media post templates that I can use on LinkedIn and Instagram. Include quote cards, carousel covers, image posts with text overlays and announcement templates. Export them so I can edit in Canva. Each template should only use my brand colors and my brand fonts. Follow the spacing rules from my guide.",
+   "mark": "50 social media post templates",
+   "tip_label": "MINE",
+   "tip": "30 quote cards in one sitting."
+  },
+  {
+   "heading": "The website.",
+   "heading_italic": "website.",
+   "sub": "Your web presence matches your social presence.",
+   "tool": "Claude Design",
+   "text": "Using my brand guide, build me a personal website landing page. It should have a hero section with my name and tagline, a section explaining what I do, a section with testimonials, and a call to action to book a call. Keep it minimal, dark background. The design should feel like walking into a curated gallery. Not a templated website.",
+   "mark": "curated gallery",
+   "tip_label": "THEN",
+   "tip": "Drag in a screenshot of a website you admire."
+  }
+ ],
+ "close": {
+  "kicker": "THREE PROMPTS · TWENTY MINUTES",
+  "line": "Your taste\nis the input.\nAI just makes it real.",
+  "italic": "AI just makes it real.",
+  "cta": "Save this for your next rebrand"
+ }
+}

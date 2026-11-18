@@ -1,0 +1,18 @@
+{
+  "name": "bernard-studio",
+  "description": "Bernard Studio: make reels, carousels and animated pieces in your own styles.",
+  "owner": {
+    "name": "Nulight"
+  },
+  "plugins": [
+    {
+      "name": "bernard-studio",
+      "source": {
+        "source": "archive",
+        "url": "https://github.com/NulightJens/bernard-studio/releases/download/v1.0.0/bernard-studio-1.0.0.zip",
+        "sha256": "83101ddaa0c2b295a881591dc4342967ce352a97bcb2c4bbc9185466dfb9fe29"
+      },
+      "description": "A step-by-step studio in Claude Code: pick a style, pick your words, get a render, give notes, get a final file."
+    }
+  ]
+}

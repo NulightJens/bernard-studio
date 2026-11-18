@@ -1,0 +1,54 @@
+{
+ "colors": {
+  "black": "#0A0908",
+  "obsidian": "#0D0D0D",
+  "cream": "#F1EBDF",
+  "warm_white": "#EEE9DF",
+  "zen": "#F5F5F5",
+  "iron": "#2E2E2E",
+  "muted": "#9A9A9A",
+  "ink": "#1A1F2B",
+  "red": "#B91C1C",
+  "red_on_footage": "#C42727"
+ },
+ "fonts": {
+  "display": {"file": "CormorantGaramond-Italic.ttf", "weight": 700},
+  "display_soft": {"file": "CormorantGaramond-Italic.ttf", "weight": 600},
+  "title": {"file": "CormorantGaramond.ttf", "weight": 600},
+  "title_light": {"file": "CormorantGaramond.ttf", "weight": 500},
+  "caption": {"file": "Raleway.ttf", "weight": 800},
+  "label": {"file": "Raleway.ttf", "weight": 600},
+  "body": {"file": "Raleway.ttf", "weight": 500},
+  "archive": {"file": "SpecialElite-Regular.ttf"},
+  "hand": {"file": "PermanentMarker-Regular.ttf"},
+  "ui": {"file": "Inter.ttf"}
+ },
+ "captions": {
+  "size": 62,
+  "min_size": 40,
+  "words_per_line": 4,
+  "case": "upper",
+  "tracking": 0.02,
+  "shadow": true
+ },
+ "hand_font_max_per_video": 3,
+ "safe": {"side": 80, "top": 220, "bottom": 300},
+ "formats": {
+  "reel": {"w": 1080, "h": 1920, "fps": 24},
+  "animated": {"w": 1080, "h": 1920, "fps": 24},
+  "carousel": {"w": 1080, "h": 1350}
+ },
+ "sound": {
+  "lufs": -14.0,
+  "lufs_tolerance": 0.5,
+  "true_peak_max": -1.5,
+  "true_peak_aim": -2.0,
+  "music_under_db": 18,
+  "sfx_under_db_min": 24,
+  "sfx_under_db_max": 30,
+  "sfx_under_db": 27,
+  "duck_db": 4
+ },
+ "voice": {"cleanup": "auto"},
+ "style": {}
+}

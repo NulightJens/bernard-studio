@@ -1,0 +1,48 @@
+{
+ "style": "receipts",
+ "spec_version": 1,
+ "passage": "passage/passage.json",
+ "sources": {"screen": "sources/screen.mov"},
+ "opening": {
+  "figure": "$40,000",
+  "trail": "from an agency, 2019",
+  "screen": {"source": "screen", "in": 0.2, "x": 0.382}
+ },
+ "face": {"x": 0.492, "zoom": 1.4, "top": 440},
+ "then": {
+  "at": {"word": 7, "offset": -0.025},
+  "until": {"word": 12, "edge": "end", "offset": 0.07},
+  "total": "$40,000",
+  "rows": [
+   {"label": "FROM", "text": "AN AGENCY", "at": {"word": 10}},
+   {"label": "DATE", "text": "2019", "at": {"word": 12}}
+  ]
+ },
+ "keyword": {"at": {"word": 21}, "text": "PAID", "trail": "FOR IT.", "trail_at": {"word": 22}},
+ "now": {
+  "at": {"word": 24},
+  "total": "$20",
+  "unit": "/ month",
+  "total_at": {"word": 27},
+  "hand": {"text": "a conversation.", "at": {"word": 32}}
+ },
+ "captions": [
+  {"at": {"t": 0}, "text": "THIS RIGHT"},
+  {"at": {"word": 2}, "text": "HERE"},
+  {"at": {"word": 3}, "text": "WOULD HAVE"},
+  {"at": {"word": 5}, "text": "COST ME"},
+  {"at": {"word": 7, "offset": -0.025}, "text": "$40,000"},
+  {"at": {"word": 8}, "text": "FROM AN"},
+  {"at": {"word": 10}, "text": "AGENCY"},
+  {"at": {"word": 11}, "text": "IN 2019."},
+  {"at": {"word": 13}, "text": "I KNOW"},
+  {"at": {"word": 15}, "text": "BECAUSE"},
+  {"at": {"word": 16}, "text": "THE COMPANY"},
+  {"at": {"word": 18}, "text": "I WORK FOR"},
+  {"at": {"word": 24}, "text": "NOW IT COSTS"},
+  {"at": {"word": 27}, "text": "$20"},
+  {"at": {"word": 28}, "text": "A MONTH"},
+  {"at": {"word": 30}, "text": "AND A"}
+ ],
+ "tail": 1.0
+}

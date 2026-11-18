@@ -1,0 +1,17 @@
+{
+  "description": "Lets the studio's own routine steps run without a permission question. Installs, downloads and anything outside his studio folder still ask him.",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash|Read|Glob|Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/usr/bin/osascript -l JavaScript \"${CLAUDE_PLUGIN_ROOT}/hooks/auto-allow.js\"",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}

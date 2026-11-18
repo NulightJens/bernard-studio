@@ -1,0 +1,29 @@
+{
+ "style": "words-in-the-room",
+ "spec_version": 1,
+ "passage": "passage/passage.json",
+ "room": {"scale": 0.9, "left": -153, "top": 700},
+ "camera": {"push": 0.085, "drift": -14, "focus": [693, 934], "light": [351, 1078]},
+ "wall": [
+  {"kind": "figure", "text": "$40,000", "at": {"word": 0}, "x": "center", "y": 612, "size": 236,
+   "warm": {"word": 7}, "strike": {"word": 24}, "dim": {"word": 26}, "until": {"word": 33}},
+  {"kind": "type", "text": "AN AGENCY", "at": {"word": 10}, "x": 130, "y": 864.5, "size": 36,
+   "until": {"word": 26}, "leave": "fade"},
+  {"kind": "type", "text": "2019", "at": {"word": 12}, "x": 130, "y": 913.5, "size": 36,
+   "until": {"word": 26}, "leave": "fade"},
+  {"kind": "figure", "text": "$20", "at": {"word": 27}, "x": 130, "y": 856, "size": 150, "until": {"word": 33}},
+  {"kind": "type", "text": "A MONTH", "at": {"word": 28}, "x": 130, "y": 1020.5, "size": 36, "until": {"word": 33}},
+  {"kind": "line", "text": "+ a conversation.", "at": {"word": 32}, "x": 130, "y": 1082.5, "size": 64,
+   "until": {"word": 33}},
+  {"kind": "title", "text": "FOUNDATION", "at": {"word": 42, "offset": -0.2}, "x": "center", "y": 689, "size": 76,
+   "stack": [{"word": 45, "offset": -0.2}, {"word": 46, "offset": -0.2}, {"word": 47, "offset": -0.2}]}
+ ],
+ "sound": {
+  "bed": {"name": "drone", "under_db": 18},
+  "sfx": [
+   {"name": "impact", "at": {"word": 7, "offset": 0.11}, "under_db": 27, "len": 1.6},
+   {"name": "brush", "at": {"word": 24}, "under_db": 26, "len": 0.7},
+   {"name": "air-whoosh", "at": {"word": 33}, "under_db": 26, "len": 1.4}
+  ]
+ }
+}

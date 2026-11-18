@@ -1,0 +1,86 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$defs": {
+  "picture": {
+   "type": "object",
+   "required": ["source"],
+   "properties": {
+    "source": {"type": "string", "minLength": 1},
+    "t": {"type": "number", "minimum": 0},
+    "from": {"type": "number", "minimum": 0},
+    "to": {"type": "number", "minimum": 0},
+    "zoom": {"type": "number", "minimum": 1, "maximum": 3},
+    "x": {"type": "number", "minimum": 0, "maximum": 1},
+    "y": {"type": "number", "minimum": 0, "maximum": 1}
+   },
+   "additionalProperties": false
+  },
+  "print": {
+   "type": "object",
+   "required": ["photo"],
+   "properties": {
+    "photo": {"$ref": "#/$defs/picture"},
+    "caption": {"type": "string", "maxLength": 40},
+    "box": {"type": "array", "items": {"type": "number"}, "minItems": 4, "maxItems": 4},
+    "rotate": {"type": "number", "minimum": -8, "maximum": 8},
+    "tapes": {"type": "array", "items": {"type": "array", "items": {"type": "number"}, "minItems": 3, "maxItems": 3}}
+   },
+   "additionalProperties": false
+  },
+  "marker": {
+   "type": "object",
+   "required": ["text"],
+   "properties": {
+    "text": {"type": "string", "minLength": 2, "maxLength": 50},
+    "box": {"type": "array", "items": {"type": "number"}, "minItems": 3, "maxItems": 3},
+    "size": {"type": "number", "minimum": 36, "maximum": 60},
+    "rotate": {"type": "number", "minimum": -10, "maximum": 10}
+   },
+   "additionalProperties": false
+  },
+  "line": {"type": "string", "minLength": 1, "maxLength": 140}
+ },
+ "type": "object",
+ "required": ["style", "spec_version", "slides"],
+ "properties": {
+  "style": {"const": "field-notes"},
+  "spec_version": {"const": 1},
+  "passage": {"type": "string"},
+  "format": {"type": "object"},
+  "slides": {
+   "type": "array",
+   "minItems": 3,
+   "maxItems": 10,
+   "items": {
+    "type": "object",
+    "required": ["kind", "title"],
+    "properties": {
+     "kind": {"enum": ["cover", "step", "close"]},
+     "layout": {"enum": ["step", "step-right", "step-list"]},
+     "step": {"type": "integer", "minimum": 1, "maximum": 12,
+              "description": "Optional. The step number, shown as STEP <n> above a step slide's title; leave it out and the slide has no step label."},
+     "title": {"type": "string", "minLength": 2, "maxLength": 100},
+     "title_size": {"type": "number", "minimum": 48, "maximum": 80},
+     "title_top": {"type": "number"},
+     "typed_top": {"type": "number"},
+     "typed": {"type": "array", "items": {"$ref": "#/$defs/line"}, "maxItems": 6},
+     "dim": {"type": "array", "items": {"$ref": "#/$defs/line"}, "maxItems": 3},
+     "list_title": {"type": "string", "maxLength": 24},
+     "list": {"type": "array", "items": {"type": "string", "maxLength": 50}, "maxItems": 4},
+     "list_box": {"type": "array", "items": {"type": "number"}, "minItems": 3, "maxItems": 3},
+     "print": {"$ref": "#/$defs/print"},
+     "marker": {"$ref": "#/$defs/marker"},
+     "arrow": {"type": "boolean"},
+     "arrow_at": {"type": "array", "items": {"type": "number"}, "minItems": 2, "maxItems": 2},
+     "underline": {"type": "string"},
+     "foot": {"type": "string", "maxLength": 50}
+    },
+    "additionalProperties": false
+   }
+  },
+  "beats": {"type": "array", "maxItems": 0},
+  "sound": {"type": "object"},
+  "brand": {"type": "object"}
+ },
+ "additionalProperties": false
+}

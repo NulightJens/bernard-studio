@@ -1,0 +1,43 @@
+{
+  "style": "moving-type",
+  "spec_version": 1,
+  "passage": "passage/passage.json",
+  "beats": [
+    {"kind": "stop", "lines": [
+      {"text": "The whole", "look": "strong", "size": 250, "x": -40, "y": -1790},
+      {"text": "thing,", "look": "strong", "size": 250, "x": 150, "y": -1570}],
+     "camera": {"land": {"roll": -0.6}, "leave": {"zoom": 0.97, "roll": -0.3}}},
+    {"kind": "stop", "keep": true, "lines": [
+      {"text": "this right here,", "look": "serif", "size": 150, "y": -1310}],
+     "camera": {"lead": 0.40, "land": {"roll": 0}, "leave": {"zoom": 0.96, "roll": 0.2}, "arrive": -0.02}},
+    {"kind": "stop", "lines": [
+      {"text": "would have cost me", "look": "label", "y": -1035},
+      {"text": "$40,000", "look": "number", "size": 240, "y": -860}],
+     "camera": {"lead": 0.32, "arrive": -0.02, "land": {"zoom": 1.08, "dy": -30, "roll": 0.8},
+                "keys": [{"at": {"word": 10, "offset": -0.05}, "zoom": 1.02, "dy": -10, "roll": 0.4}],
+                "leave": {"zoom": 0.98, "dy": 0, "roll": 0}}},
+    {"kind": "stop", "lines": [
+      {"text": "from an agency", "look": "italic", "size": 150, "y": -560},
+      {"text": "in 2019.", "look": "typed", "size": 70, "x": 250, "y": -400}],
+     "camera": {"land": {"roll": -0.6}, "leave": {"zoom": 0.97, "roll": -0.2}}},
+    {"kind": "stop", "lines": [
+      {"text": "I know because", "look": "label", "y": -170},
+      {"text": "the company I work for", "look": "serif", "size": 95, "y": -50},
+      {"text": "paid for it.", "look": "strong", "size": 220, "y": 150}],
+     "camera": {"land": {"zoom": 1.06, "dy": -60, "roll": 0.5},
+                "keys": [{"at": {"word": 24, "offset": -0.30}, "zoom": 1.02, "dy": -20, "roll": 0.2},
+                         {"at": {"word": 24, "offset": 0.10}, "zoom": 1.05, "dy": 40, "roll": 0}],
+                "leave": {"zoom": 1.03, "dy": 50, "roll": -0.1}}},
+    {"kind": "stop", "lines": [
+      {"text": "Now it costs", "look": "label", "y": 370},
+      {"text": "$20", "look": "number", "size": 420, "y": 600},
+      {"text": "a month", "look": "italic", "size": 130, "x": 170, "y": 880}],
+     "camera": {"land": {"zoom": 1.06, "dy": -40, "roll": -0.7}, "keys": [],
+                "leave": {"zoom": 1.0, "dy": -10, "roll": -0.3}}},
+    {"kind": "stop", "keep": true, "lines": [
+      {"text": "and a conversation.", "look": "italic", "size": 125, "y": 1085}],
+     "camera": {"lead": 0.30, "arrive": 0.02, "land": {"roll": 0}, "leave": {"zoom": 0.98}}}
+  ],
+  "poster": {"strike": "$40,000", "hold": 1.73},
+  "sound": {"bed": {"name": "type", "changes": [{"word": 16}, {"word": 27}, {"word": 33}]}}
+}

@@ -1,0 +1,26 @@
+/* His kit for the HTML slides: colour tokens and type stacks. The fonts themselves come from the studio's own font
+   files (shoot.font_css). One slide per page, drawn at the page's top left. */
+:root {
+  --obsidian: #0D0D0D;
+  --ink: #111111;
+  --red: #B91C1C;
+  --red-footage: #C42727;
+  --warm: #EEE9DF;
+  --ivory: #F1EBDF;
+  --iron: #2E2E2E;
+  --muted: #9A958C;
+  --display: "Cormorant Garamond", Georgia, serif;
+  --body: "Raleway", system-ui, sans-serif;
+  --arch: "Special Elite", "Courier New", monospace;
+  --hand: "Permanent Marker", cursive;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; font-variant-numeric: lining-nums; }
+html, body { margin: 0; overflow: hidden; background: #000; }
+.slide { position: relative; overflow: hidden; background: var(--obsidian); color: var(--warm); font-family: var(--body); }
+.layer { background: transparent !important; }
+.abs { position: absolute; }
+.grain::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none; z-index: 50;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='360' height='360'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .5  0 0 0 0 .5  0 0 0 0 .5  0 0 0 .9 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+  opacity: .10; mix-blend-mode: overlay;
+}

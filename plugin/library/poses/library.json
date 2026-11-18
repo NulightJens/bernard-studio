@@ -1,0 +1,192 @@
+{
+ "about": "Cut-out photos of him for the cover of The art of. facing: where he looks. cover_side: which bottom corner of the cover the picture fits (the edge it is cropped on goes against the slide edge). New poses he adds are kept in his own photos folder and listed the same way.",
+ "poses": {
+  "bernard-desk-gesture-open-hand": {
+   "file": "bernard-desk-gesture-open-hand.png",
+   "what": "at his desk, open hand gesturing, looking left",
+   "from": "desk video",
+   "facing": "left",
+   "cover_side": "either",
+   "size": [
+    793,
+    950
+   ]
+  },
+  "bernard-desk-hands-on-glasses": {
+   "file": "bernard-desk-hands-on-glasses.png",
+   "what": "at his desk, both hands on his glasses",
+   "from": "desk video",
+   "facing": "left",
+   "cover_side": "either",
+   "size": [
+    847,
+    983
+   ]
+  },
+  "bernard-desk-gesture-low-hand": {
+   "file": "bernard-desk-gesture-low-hand.png",
+   "what": "at his desk, low hand gesture, looking left",
+   "from": "desk video",
+   "facing": "left",
+   "cover_side": "either",
+   "size": [
+    829,
+    967
+   ]
+  },
+  "bernard-desk-three-quarter-b": {
+   "file": "bernard-desk-three-quarter-b.png",
+   "what": "at his desk, three-quarter view, looking left",
+   "from": "desk video",
+   "facing": "left",
+   "cover_side": "either",
+   "size": [
+    833,
+    982
+   ]
+  },
+  "bernard-desk-listening": {
+   "file": "bernard-desk-listening.png",
+   "what": "at his desk, listening, looking left",
+   "from": "desk video",
+   "facing": "left",
+   "cover_side": "either",
+   "size": [
+    850,
+    968
+   ]
+  },
+  "bernard-desk-speaking": {
+   "file": "bernard-desk-speaking.png",
+   "what": "at his desk, speaking, looking left",
+   "from": "desk video",
+   "facing": "left",
+   "cover_side": "either",
+   "size": [
+    791,
+    981
+   ]
+  },
+  "bernard-studio-one-finger": {
+   "file": "bernard-studio-one-finger.png",
+   "what": "in the studio, one finger up, facing the camera",
+   "from": "studio video",
+   "facing": "camera",
+   "cover_side": "right",
+   "size": [
+    1065,
+    1018
+   ]
+  },
+  "bernard-studio-front-a": {
+   "file": "bernard-studio-front-a.png",
+   "what": "in the studio, facing the camera",
+   "from": "studio video",
+   "facing": "camera",
+   "cover_side": "right",
+   "size": [
+    1080,
+    1014
+   ]
+  },
+  "bernard-studio-front-b": {
+   "file": "bernard-studio-front-b.png",
+   "what": "in the studio, facing the camera",
+   "from": "studio video",
+   "facing": "camera",
+   "cover_side": "right",
+   "size": [
+    1080,
+    1020
+   ]
+  },
+  "bernard-studio-hand-up": {
+   "file": "bernard-studio-hand-up.png",
+   "what": "in the studio, facing the camera, hand coming up",
+   "from": "studio video",
+   "facing": "camera",
+   "cover_side": "right",
+   "size": [
+    1080,
+    1008
+   ]
+  },
+  "bernard-studio-hand-right": {
+   "file": "bernard-studio-hand-right.png",
+   "what": "in the studio, facing the camera, hand at the right edge",
+   "from": "studio video",
+   "facing": "camera",
+   "cover_side": "right",
+   "size": [
+    1080,
+    1003
+   ]
+  },
+  "bernard-studio-front-c": {
+   "file": "bernard-studio-front-c.png",
+   "what": "in the studio, facing the camera",
+   "from": "studio video",
+   "facing": "camera",
+   "cover_side": "right",
+   "size": [
+    1080,
+    1021
+   ]
+  },
+  "bernard-kit-red-profile": {
+   "file": "bernard-kit-red-profile.png",
+   "what": "profile, looking right, braids and neck tattoo",
+   "from": "kit photo",
+   "facing": "right",
+   "cover_side": "right",
+   "size": [
+    613,
+    693
+   ]
+  },
+  "bernard-glasses-hand-up": {
+   "file": "bernard-glasses-hand-up.png",
+   "what": "in glasses, facing the camera, hand raised at the left",
+   "from": "talking video with glasses",
+   "facing": "camera",
+   "cover_side": "either",
+   "size": [
+    1178,
+    1021
+   ]
+  },
+  "bernard-glasses-front-a": {
+   "file": "bernard-glasses-front-a.png",
+   "what": "in glasses, facing the camera, speaking",
+   "from": "talking video with glasses",
+   "facing": "camera",
+   "cover_side": "either",
+   "size": [
+    1095,
+    1037
+   ]
+  },
+  "bernard-glasses-front-b": {
+   "file": "bernard-glasses-front-b.png",
+   "what": "in glasses, facing the camera, calm",
+   "from": "talking video with glasses",
+   "facing": "camera",
+   "cover_side": "either",
+   "size": [
+    1118,
+    1047
+   ]
+  },
+  "bernard-glasses-front-c": {
+   "file": "bernard-glasses-front-c.png",
+   "what": "in glasses, facing the camera, speaking, hand low at the left",
+   "from": "talking video with glasses",
+   "facing": "camera",
+   "cover_side": "either",
+   "size": [
+    1167,
+    1050
+   ]
+  }
+ }
+}

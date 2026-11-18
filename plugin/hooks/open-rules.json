@@ -1,0 +1,9 @@
+{
+ "about": "What studio open file may open. Read by both the hook (hooks/auto-allow.js) and the studio (browse.safe_to_open), so the two checks cannot drift. Places: his studio folder, its four folders, anything inside a project, the plugin's examples.",
+ "file_types": ["mp4", "mov", "m4v", "png", "jpg", "jpeg", "pdf", "txt"],
+ "examples_only_types": ["html"],
+ "bundle_types": ["app", "bundle", "pkg", "mpkg", "command", "terminal", "workflow", "action", "plugin", "framework",
+  "kext", "prefpane", "saver", "appex", "scptd", "xpc", "qlgenerator", "mdimporter", "component", "systemextension",
+  "webloc", "fileloc", "inetloc", "tool", "scpt"],
+ "studio_folders": ["Drop footage here", "My photos", "Projects", "Finished"]
+}

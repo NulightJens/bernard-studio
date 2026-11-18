@@ -1,0 +1,2 @@
+# Bernard Studio slide maker (Python 3.12). Compile against base.txt: uv pip compile slides.in --universal --python-version 3.12 --generate-hashes -c base.txt -o slides.txt
+playwright==1.64.1

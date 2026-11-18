@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Bernard Ablola Brand Kit</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Permanent+Marker&family=Raleway:wght@400;500;600;700;800&family=Special+Elite&display=swap" rel="stylesheet">
+<style>
+:root { --font-display: 'Cormorant Garamond', Georgia, serif; --display-style: italic; --display-weight: 700; --font-text: 'Raleway', system-ui, sans-serif; --font-mono: 'Special Elite', 'Courier New', monospace; --paper: #F5F5F5; --sheet: color-mix(in srgb, #F5F5F5 80%, #ffffff); --ink: #0D0D0D; --muted: #5E5E5E; --hair: #C9C9C9; --accent: #B91C1C; --accent-line: #B91C1C; --seg-foot: #5E5E5E; --seg-light: color-mix(in srgb, #F5F5F5 86%, #0D0D0D); --seg-dark: #0D0D0D; --focus: #B91C1C; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --paper: #0D0D0D; --sheet: color-mix(in srgb, #0D0D0D 88%, #F5F5F5); --ink: #F5F5F5; --muted: #9A9A9A; --hair: #2E2E2E; --accent: #B91C1C; --accent-line: #B91C1C; --seg-foot: #9A9A9A; --seg-light: #F5F5F5; --seg-dark: color-mix(in srgb, #0D0D0D 65%, #F5F5F5); --focus: #B91C1C; color-scheme: dark; } }
+:root[data-theme="dark"] { --paper: #0D0D0D; --sheet: color-mix(in srgb, #0D0D0D 88%, #F5F5F5); --ink: #F5F5F5; --muted: #9A9A9A; --hair: #2E2E2E; --accent: #B91C1C; --accent-line: #B91C1C; --seg-foot: #9A9A9A; --seg-light: #F5F5F5; --seg-dark: color-mix(in srgb, #0D0D0D 65%, #F5F5F5); --focus: #B91C1C; color-scheme: dark; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-synthesis: none; background: var(--paper); color: var(--ink); font-family: var(--font-text); -webkit-font-smoothing: antialiased; }
+main { max-width: 1120px; margin: 0 auto; padding: 48px 16px 96px; }
+header { padding-bottom: 28px; border-bottom: 1px solid var(--hair); }
+.eyebrow, h2 { font: 500 13px/1 var(--font-mono); letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+h1 { margin-top: 14px; font-family: var(--font-display); font-style: var(--display-style); font-weight: var(--display-weight);
+      font-size: clamp(40px, 7vw, 72px); line-height: 1; letter-spacing: -.02em; }
+.lede { margin-top: 16px; max-width: 62ch; font-size: 17px; line-height: 1.5; color: var(--muted); }
+section { padding: 36px 0; border-bottom: 1px solid var(--hair); }
+h2 { margin-bottom: 22px; }
+.spec { display: grid; grid-template-columns: 170px minmax(0, 1fr); gap: 16px; align-items: baseline; padding: 12px 0; }
+.spec + .spec { border-top: 1px solid var(--hair); }
+.spec .k, section > .k { font: 500 12px/1.5 var(--font-mono); color: var(--muted); }
+.spec .v { overflow-wrap: anywhere; }
+.d { font-family: var(--font-display); font-style: var(--display-style); font-weight: var(--display-weight); font-size: clamp(36px, 6vw, 60px); line-height: 1.05; }
+.t { font-size: 22px; line-height: 1.35; font-weight: 600; }
+.m { font-family: var(--font-mono); font-size: 20px; }
+.sw { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; }
+.chip { border: 1px solid var(--hair); border-radius: 6px; overflow: hidden; background: var(--sheet); }
+.chip i { display: block; height: 72px; border-bottom: 1px solid var(--hair); }
+.chip b { display: block; padding: 10px 12px 3px; font-weight: 600; font-size: 14px; }
+.chip span { display: block; padding: 0 12px 12px; font: 400 12px/1.45 var(--font-mono); color: var(--muted); }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 18px; }
+figure img { display: block; width: 100%; height: auto; aspect-ratio: 9 / 16; border-radius: 6px; border: 1px solid var(--hair); }
+figcaption { margin-top: 9px; font-size: 14px; line-height: 1.45; color: var(--muted); }
+figcaption b { color: var(--ink); font-weight: 600; }
+.note { margin-top: -8px; margin-bottom: 20px; font-size: 15px; color: var(--muted); }
+footer { padding-top: 32px; font-size: 16px; line-height: 1.55; max-width: 62ch; }
+@media (max-width: 560px) { .spec { grid-template-columns: 1fr; gap: 6px; } }
+.pm { font-family: 'Permanent Marker', cursive; font-size: clamp(28px, 4.6vw, 46px); line-height: 1.1; color: var(--accent); }
+
+/* typography section */
+.tdir { font-family: var(--font-display); font-style: italic; font-weight: 600; font-size: clamp(24px, 3.6vw, 34px); line-height: 1.25; max-width: 30ch; margin-bottom: 30px; }
+.tdir em { font-style: italic; color: var(--accent); }
+.sub { font: 500 12px/1.5 var(--font-mono); letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin: 30px 0 12px; }
+.ladder { border-top: 1px solid var(--hair); }
+.rung { display: grid; grid-template-columns: 34px minmax(0, 1fr) 210px; gap: 16px; align-items: baseline; padding: 14px 0; border-bottom: 1px solid var(--hair); }
+.rung .n { font: 500 12px/1 var(--font-mono); color: var(--muted); }
+.rung .meta { font: 400 12px/1.5 var(--font-mono); color: var(--muted); }
+.rung .s { overflow-wrap: anywhere; }
+.s-h { font-family: var(--font-display); font-style: italic; font-weight: 700; font-size: clamp(34px, 5.4vw, 56px); line-height: 1.02; letter-spacing: -.02em; }
+.s-cap { font-family: var(--font-text); font-weight: 800; font-size: 22px; text-transform: uppercase; letter-spacing: .02em; }
+.s-cap .e { font-family: var(--font-display); font-style: italic; font-weight: 700; font-size: 1.22em; text-transform: uppercase; color: var(--accent); }
+.s-title { font-family: var(--font-display); font-weight: 600; font-size: 30px; line-height: 1.15; }
+.s-body { font-family: var(--font-text); font-weight: 400; font-size: 17px; line-height: 1.5; }
+.s-lab { font-family: var(--font-text); font-weight: 600; font-size: 12px; letter-spacing: .18em; text-transform: uppercase; color: var(--muted); }
+.s-fig { font-family: var(--font-display); font-style: italic; font-weight: 700; font-size: clamp(40px, 6vw, 60px); line-height: 1; }
+.s-pm { font-family: 'Permanent Marker', cursive; font-size: 30px; color: var(--accent); display: inline-block; transform: rotate(-3deg); }
+.faces { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+@media (min-width: 1040px) { .faces { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+@media (max-width: 560px) { .faces { grid-template-columns: 1fr; } }
+.face { border: 1px solid var(--hair); border-radius: 6px; background: var(--sheet); padding: 18px 18px 16px; display: flex; flex-direction: column; gap: 10px; }
+.face .role { font: 500 11px/1.4 var(--font-mono); letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+.face .glyph { font-size: 64px; line-height: 1; min-height: 70px; }
+.face .name { font-weight: 700; font-size: 16px; }
+.face .feel { font-size: 14px; color: var(--muted); line-height: 1.45; }
+.face ul { list-style: none; font-size: 14px; line-height: 1.5; border-top: 1px solid var(--hair); padding-top: 10px; }
+.face li { padding-left: 16px; position: relative; }
+.face li::before { content: "→"; position: absolute; left: 0; color: var(--muted); }
+.face li.no::before { content: "✕"; color: var(--accent); }
+.g-d { font-family: var(--font-display); font-style: italic; font-weight: 700; }
+.g-t { font-family: var(--font-text); font-weight: 800; }
+.g-p { font-family: 'Permanent Marker', cursive; color: var(--accent); }
+.g-m { font-family: var(--font-mono); font-weight: 400; font-size: 54px !important; }
+.s-arch { font-family: var(--font-mono); font-weight: 400; font-size: 20px; letter-spacing: .04em; color: var(--ink); }
+.rules { list-style: none; display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 0 28px; }
+.rules li { padding: 11px 0 11px 22px; border-top: 1px solid var(--hair); font-size: 15px; line-height: 1.45; position: relative; }
+.rules li::before { content: "·"; position: absolute; left: 6px; top: 9px; font-size: 20px; color: var(--accent); }
+@media (max-width: 560px) { .rung { grid-template-columns: 26px minmax(0, 1fr); } .rung .meta { grid-column: 2; } }
+
+/* cards: phone-size preview */
+.ptools { display:flex; flex-wrap:wrap; gap:10px 22px; align-items:center; margin:4px 0 26px; font-size:15px; color:var(--muted); }
+.ptools label { display:inline-flex; align-items:center; gap:8px; cursor:pointer; color:var(--ink); }
+.ptools input { width:18px; height:18px; accent-color:var(--accent); }
+.crow { display:grid; grid-template-columns:360px minmax(0,1fr); gap:28px 36px; align-items:start; padding:30px 0; border-top:1px solid var(--hair); }
+.phone { position:relative; width:min(360px, 100%); aspect-ratio:9/16; border-radius:30px; overflow:hidden; background:#0D0D0D;
+         box-shadow:0 0 0 7px #0D0D0D, 0 0 0 8px var(--hair); margin:8px; }
+.phone video { display:block; width:100%; height:100%; object-fit:cover; }
+.ov { position:absolute; left:0; right:0; pointer-events:none; display:none; }
+.show-caps .ov.cap, .show-ui .ov.ui { display:block; }
+.ov.cap { top:61%; height:13.5%; background:rgba(185,28,28,.10); border-top:1px dashed rgba(185,28,28,.7); border-bottom:1px dashed rgba(185,28,28,.7); }
+.ov.cap span { position:absolute; left:0; right:0; top:calc(64.3% - 61%); }
+.ov.cap b { display:block; text-align:center; margin-top:10px; font:800 17px/1.1 var(--font-text); letter-spacing:.02em; color:#F5F5F5; text-transform:uppercase; text-shadow:0 1px 3px rgba(0,0,0,.6); }
+.phone.light .ov.cap b { color:#0D0D0D; text-shadow:none; }
+.phone.light .ov.cap b em { color:#B91C1C; }
+.ov.cap b em { font-family:var(--font-display); font-style:italic; font-weight:700; font-size:1.2em; color:#C42727; }
+.ov.ui.top { top:0; height:8%; background:linear-gradient(rgba(0,0,0,.45), transparent); }
+.ov.ui.rail { top:44%; bottom:15%; left:auto; width:13%; }
+.ov.ui.rail i { display:block; width:30px; height:30px; margin:0 auto 16px; border-radius:50%; background:rgba(245,245,245,.85); }
+.ov.ui.bot { bottom:0; height:15%; background:linear-gradient(transparent, rgba(0,0,0,.6)); }
+.ov.ui.bot i { position:absolute; left:14px; bottom:22px; width:46%; height:9px; border-radius:5px; background:rgba(245,245,245,.85); box-shadow:0 -16px 0 rgba(245,245,245,.6); }
+.cmeta h3 { font-family:var(--font-display); font-style:italic; font-weight:600; font-size:clamp(28px, 4vw, 38px); line-height:1.1; }
+.cmeta .k2 { font:400 12px/1.4 var(--font-mono); letter-spacing:.14em; text-transform:uppercase; color:var(--muted); margin-bottom:6px; }
+.cmeta p { margin-top:10px; font-size:15px; line-height:1.5; color:var(--muted); max-width:56ch; }
+.moments { display:grid; grid-template-columns:repeat(4, minmax(0,1fr)); gap:12px; margin-top:20px; }
+.moments figure img { aspect-ratio:9/16; width:100%; height:auto; display:block; border-radius:8px; border:1px solid var(--hair); }
+.moments figcaption { margin-top:7px; font-size:13px; line-height:1.35; color:var(--muted); }
+.moments figcaption b { color:var(--ink); font-weight:600; }
+.pass { display:inline-flex; align-items:center; gap:8px; margin-top:18px; padding:7px 12px; border:1px solid var(--hair); border-radius:4px; font:400 13px/1.3 var(--font-mono); color:var(--ink); }
+.pass::before { content:"✓"; color:var(--accent); font-family:var(--font-text); font-weight:800; }
+@media (max-width: 760px) { .crow { grid-template-columns:1fr; } .phone { margin:8px auto; } }
+
+/* in use: real photography or pure type, typography with attitude, one red word */
+.inuse { display:grid; grid-template-columns:repeat(auto-fill, minmax(min(360px, 100%), 360px)); gap:30px 28px; }
+.iu { position:relative; width:min(360px, 100%); aspect-ratio:9/16; container-type:inline-size; overflow:hidden; background:#0D0D0D; border-radius:6px; }
+.iu .ph { position:absolute; inset:0; background-size:cover; background-position:center; }
+.iu .grain { position:absolute; inset:0; pointer-events:none; mix-blend-mode:overlay; opacity:.22;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.1' numOctaves='2' seed='4' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .5 0 0 0 0 .5 0 0 0 0 .5 0 0 0 1 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); }
+.iu .vig { position:absolute; inset:0; pointer-events:none; box-shadow:inset 0 0 18cqw rgba(0,0,0,.45); }
+.iu .ch { display:inline-block; }
+.iu .sp { display:inline-block; width:.26em; }
+.iu .swap { position:absolute; right:3cqw; top:3cqw; font:400 2.7cqw/1 var(--font-mono); letter-spacing:.08em; text-transform:uppercase;
+            color:rgba(245,245,245,.55); background:rgba(13,13,13,.35); padding:1cqw 1.6cqw; border-radius:2px; }
+.iu .meta { position:absolute; font:400 3.6cqw/1.75 var(--font-mono); letter-spacing:.18em; text-transform:uppercase; }
+.iu .meta .r { display:block; width:9cqw; margin:2.6cqw 0; border-top:1px solid currentColor; opacity:.6; }
+
+/* caption: a real photo, big Cormorant capitals, BEHIND in red with a brush underline, a hand stamp */
+.iu-cap .ph { filter:grayscale(1) contrast(1.12) brightness(.92); }
+.iu-cap .shade { position:absolute; inset:0; background:linear-gradient(180deg, rgba(8,8,8,0) 42%, rgba(8,8,8,.72) 62%, rgba(8,8,8,.9) 100%); }
+.iu-cap .hl { position:absolute; left:8.5cqw; top:53%; font-family:var(--font-display); font-weight:600; font-size:15.4cqw; line-height:.94;
+              letter-spacing:-.005em; color:#EEE9DF; text-transform:uppercase; white-space:nowrap; }
+.iu-cap .hl .red { position:relative; display:inline-block; font-style:italic; font-weight:700; color:#C42727; margin-top:1cqw; }
+.iu img.brush { aspect-ratio:auto !important; border:0 !important; border-radius:0 !important; display:block; max-width:none; pointer-events:none; }
+.iu-cap .hl .red .brush { position:absolute; left:-4cqw; bottom:-11.5cqw; width:calc(100% + 12cqw); height:auto; transform:rotate(-1.5deg); }
+.iu-cap .meta { left:9cqw; top:5%; color:rgba(245,245,245,.78); }
+.iu-cap .sig { position:absolute; left:9cqw; top:91.5%; font:400 3.4cqw/1 var(--font-mono); letter-spacing:.18em; color:rgba(245,245,245,.7); }
+
+/* data: paper, a brushed number, the claim underlined in red. The mock's concept at a tenth of the volume */
+.iu-data { background:#F1EBDF; }
+.iu-data .grain { mix-blend-mode:multiply; opacity:.55;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.95' numOctaves='2' seed='6' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .4 0 0 0 0 .33 0 0 0 0 .24 0 0 0 .3 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); }
+.iu-data .tone { position:absolute; inset:0; mix-blend-mode:multiply; opacity:.5;
+  background:radial-gradient(ellipse 60% 40% at 78% 14%, rgba(120,95,60,.18), transparent 70%), radial-gradient(ellipse 50% 35% at 12% 88%, rgba(120,95,60,.14), transparent 70%); }
+.iu-data .vig { box-shadow:inset 0 0 16cqw rgba(110,86,52,.2); }
+.iu-data .kick { position:absolute; left:10cqw; top:11%; font:400 4cqw/1 var(--font-mono); letter-spacing:.2em; text-transform:uppercase; color:#2E2E2E; display:flex; align-items:center; gap:3cqw; }
+.iu-data .kick::after { content:''; width:13cqw; border-top:1px solid rgba(46,46,46,.6); }
+.iu-data .r1 { position:absolute; left:10cqw; top:16%; width:9cqw; border-top:1px solid rgba(46,46,46,.55); }
+.iu-data .hl { position:absolute; left:9.5cqw; top:20%; font-family:var(--font-display); font-weight:600; font-size:9.6cqw; line-height:1.05; letter-spacing:-.015em; color:#0D0D0D; white-space:nowrap; }
+.iu-data .hl .brush { position:absolute; left:-3cqw; top:92%; width:60cqw; height:auto; transform:rotate(-1.8deg); }
+.iu-data .num { position:absolute; left:6cqw; top:36%; font-family:'Permanent Marker', cursive; font-size:33cqw; line-height:1; letter-spacing:-.04em;
+                color:#161616; transform:rotate(-5deg); filter:url(#iu-dry); white-space:nowrap; }
+.iu-data .flick { position:absolute; left:0; top:0; width:100%; height:100%; pointer-events:none; }
+.iu-data .lab { position:absolute; left:10cqw; top:62%; font:400 4.7cqw/1 var(--font-mono); letter-spacing:.2em; text-transform:uppercase; color:#0D0D0D; }
+.iu-data .src { position:absolute; left:10cqw; top:71%; font:400 3.7cqw/1.5 var(--font-mono); color:#2E2E2E; }
+.iu-data .meta { left:10cqw; top:83%; color:#2E2E2E; }
+
+/* takeaway: written by hand in white over the red duotone (grayscale x Blood Red, highlights lifted warm, heavy grain) */
+.iu-take .ph { filter:grayscale(1) contrast(1.15) brightness(1.45); }
+.iu-take .duo { position:absolute; inset:0; background:#B91C1C; mix-blend-mode:multiply; }
+.iu-take .glow { position:absolute; inset:0; mix-blend-mode:screen; background:radial-gradient(ellipse 80% 55% at 64% 64%, rgba(255,140,70,.5), rgba(220,80,40,.16) 60%, transparent 85%), #3E0B0C; }
+.iu-take .grain { opacity:.42; }
+.iu-take .vig { box-shadow:inset 0 0 22cqw rgba(30,4,6,.5); }
+.iu-take .w { position:absolute; font-family:'Permanent Marker', cursive; color:#F5F2EC; filter:url(#iu-ink); white-space:nowrap; text-shadow:0 .3cqw 2cqw rgba(30,0,0,.35); }
+.iu-take .w1 { left:8cqw; top:22%; font-size:13cqw; transform:rotate(-4deg); }
+.iu-take .w2 { left:14cqw; top:32%; font-size:13cqw; transform:rotate(-2deg); }
+.iu-take .ul { position:absolute; left:47cqw; top:41.2%; width:46cqw; height:auto; transform:rotate(-2.6deg); }
+
+/* quote: Bernard's red profile. The square photo anchors the bottom; its own backdrop red, sampled, extends the field
+   above, feathered at the seam. The words sit in the space he looks into, white, because the photo carries the red */
+.iu-quote { background:radial-gradient(ellipse 120% 80% at 62% 78%, #4A0618 0%, #3C0214 45%, #28010D 100%); }
+.iu-quote .ph { top:auto; bottom:0; height:auto; aspect-ratio:1/1; background-size:cover;
+                -webkit-mask-image:linear-gradient(180deg, transparent 0%, #000 20%); mask-image:linear-gradient(180deg, transparent 0%, #000 20%);
+                filter:contrast(1.06) saturate(.95); }
+.iu-quote .grain { opacity:.3; }
+.iu-quote .vig { box-shadow:inset 0 0 20cqw rgba(16,0,4,.55); }
+.iu-quote .q { position:absolute; left:43cqw; top:13%; font-family:'Permanent Marker', cursive; font-size:8.4cqw; line-height:1.16; color:#F3F0EA;
+               transform:rotate(-4deg); transform-origin:0 0; filter:url(#iu-dry); white-space:nowrap; text-shadow:0 .3cqw 2cqw rgba(20,0,4,.35); }
+.iu-quote .q div:nth-child(2) { padding-left:1.5cqw; } .iu-quote .q div:nth-child(4) { padding-left:2cqw; } .iu-quote .q div:nth-child(6) { padding-left:3cqw; }
+.iu-quote .q .u { position:relative; display:inline-block; }
+.iu-quote .q .u .brush { position:absolute; left:-3cqw; bottom:-4.6cqw; width:calc(100% + 7cqw); height:auto; }
+.iu-quote .meta { left:8cqw; top:86%; color:rgba(245,245,245,.8); }
+
+.cap2 { margin-top: 10px; font-size: 14px; line-height: 1.5; color: var(--muted); max-width: 360px; }
+.cap2 b { color: var(--ink); font-weight: 600; }
+</style>
+</head>
+<body>
+<main>
+<section id="brief" style="padding-top:0;margin-bottom:28px">
+  <p class="eyebrow">Brief</p>
+  <h2 style="margin-top:14px">Build a video editing brand kit template from this board</h2>
+  <p class="lede" style="color:var(--ink)">This file is Bernard Ablola's video style board. Use it to build a reusable brand kit and editing template for vertical video (1080×1920, Reels, TikTok, Shorts). Everything below the brief is the source of truth: fonts, colours, type sizes, caption rules, card structure and example frames.</p>
+  <div style="margin-top:22px">
+    <div class="spec"><span class="k">Canvas</span><span class="v">1080×1920 vertical, 9:16. Keep captions in the band from 61% to 74.5% of frame height, clear of platform buttons (top 8%, right rail, bottom 15%).</span></div>
+    <div class="spec"><span class="k">Mood</span><span class="v">Samurai discipline, Zen restraint. Dark, moody, cinematic. 95% minimalism, 5% rebellion. Never glossy, bouncy, cluttered or stock-motivational.</span></div>
+    <div class="spec"><span class="k">Fonts (Google Fonts)</span><span class="v">Cormorant Garamond (display, italic 700 and upright 600) · Raleway (captions 800 caps, labels 600, body 400) · Permanent Marker (handwritten accent, 2 to 3 times a video) · Special Elite (archival kickers, dates, sources)</span></div>
+    <div class="spec"><span class="k">Colours</span><span class="v">Obsidian Black #0D0D0D · Blood Red #B91C1C · Zen White #F5F5F5 · Iron Gray #2E2E2E · Ink Blue #1A1F2B · Muted text #9A9A9A · Chart loss #8C8C8C · Chart series 3 #4A5468 · Ivory paper (data cards) #F1EBDF</span></div>
+    <div class="spec"><span class="k">Hard rules</span><span class="v">One red word per frame. One Cormorant headline per frame. Max two faces per frame plus Special Elite. Captions always Raleway 800 caps. Cormorant never below 48px on video.</span></div>
+    <div class="spec"><span class="k">Template pieces</span><span class="v">Caption style (with red emphasis word) · Headline / hook title · Lower-third label · Data card (4 moments: headline, number, context, takeaway) · Takeaway card (red duotone + handwritten white) · Quote card (red profile + handwritten quote) · Brush underline in red and white · Grain overlay</span></div>
+    <div class="spec"><span class="k">Motion</span><span class="v">Smooth and restrained: fades, line draws, slow push-ins. Showcase mode allows zoom, push and reveal transitions, and a stamp for one big word.</span></div>
+  </div>
+</section>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <filter id="iu-ink" x="-5%" y="-10%" width="110%" height="120%"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" seed="5" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="1.6"/></filter>
+  <filter id="iu-dry" x="-5%" y="-10%" width="110%" height="120%"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" seed="5" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="1.8" result="d"/>
+    <feTurbulence type="fractalNoise" baseFrequency="1.3" numOctaves="2" seed="14" result="s"/><feColorMatrix in="s" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -3.4 3.1" result="m"/><feComposite in="d" in2="m" operator="in"/></filter>
+</defs></svg>
+  <header>
+    <p class="eyebrow">Bernard Ablola · @bernardablola · style board</p>
+    <h1>Your style</h1>
+    <p class="lede">Samurai discipline, Zen restraint. Dark, moody and cinematic: deep obsidian blacks, cool ink-blue shadow, one blood-red note per frame, and an elegant serif that carries the weight of an old text. Bernard is an author, strategist and creative: Eastern philosophy, Western strategy, skate-culture grit. His videos feel like a short film from an essayist, not an influencer. They must never look glossy, bouncy, cluttered or like stock &quot;unlock your potential&quot; content.</p>
+  </header>
+  <section>
+    <h2>Typography</h2>
+    <p class="tdir">Cinematic, <em>not theatrical.</em> Intellectual, <em>not pretentious.</em> Creative, <em>not chaotic.</em></p>
+
+    <div class="sub">Four faces, one job each</div>
+    <div class="faces">
+      <div class="face">
+        <div class="role">Display · the voice</div>
+        <div class="glyph g-d">Aa</div>
+        <div class="name">Cormorant Garamond</div>
+        <div class="feel">Cinematic headlines. Elegant, editorial, sophisticated. Italic 700; upright 600 for titles and quotes.</div>
+        <ul><li>Hooks, thesis lines, words behind the head</li><li>The one red word inside a caption</li><li>Card titles and book quotes</li><li class="no">Paragraphs, or anything under 48px on video</li></ul>
+      </div>
+      <div class="face">
+        <div class="role">Body · the workhorse</div>
+        <div class="glyph g-t">Aa</div>
+        <div class="name">Raleway</div>
+        <div class="feel">Captions, labels and supporting text. Clean, modern, minimal. 800 caps for captions, 600 for labels, 400 for reading.</div>
+        <ul><li>Every caption, in caps</li><li>Eyebrows and labels, tracked 0.18em</li><li>Explanatory lines on cards</li><li class="no">The big idea: that belongs to Cormorant</li></ul>
+      </div>
+      <div class="face">
+        <div class="role">Accent · the hand</div>
+        <div class="glyph g-p">Aa</div>
+        <div class="name">Permanent Marker</div>
+        <div class="feel">Handwritten emphasis for strong opinions and key takeaways. Use sparingly: two or three moments a video.</div>
+        <ul><li>The one takeaway of the video</li><li>A note scrawled on a taped card</li><li>A red word over B-roll</li><li class="no">Captions, body text, or beside a Cormorant headline</li></ul>
+      </div>
+      <div class="face">
+        <div class="role">Archive · the details</div>
+        <div class="glyph g-m">Aa</div>
+        <div class="name">Special Elite</div>
+        <div class="feel">Archival notes and documentary details, like a typewritten manuscript or an old journal. Used sparingly, one weight only.</div>
+        <ul><li>Kickers, dates and source lines</li><li>Data labels and small statistics</li><li>Annotations and catalogue marks</li><li class="no">Headlines, captions or large numbers</li></ul>
+      </div>
+    </div>
+
+    <div class="sub">Hierarchy · sizes on the 1080×1920 frame</div>
+    <div class="ladder">
+      <div class="rung"><span class="n">01</span><span class="s s-h">Strategy is a <span style="color:var(--accent)">story.</span></span><span class="meta">Headline · Cormorant italic 700<br />120–180px · −0.02em</span></div>
+      <div class="rung"><span class="n">02</span><span class="s s-cap">You thought you were <span class="e">behind.</span></span><span class="meta">Caption + emphasis · Raleway 800 caps<br />58 / 66px · red word in Cormorant</span></div>
+      <div class="rung"><span class="n">03</span><span class="s s-title">The quiet discipline of attention</span><span class="meta">Card title, quote · Cormorant 600<br />64–88px · sentence case</span></div>
+      <div class="rung"><span class="n">04</span><span class="s s-body">Most of us inherit the story. The work is rewriting it, one decision at a time.</span><span class="meta">Supporting text · Raleway 400–500<br />34–40px · line height 1.4</span></div>
+      <div class="rung"><span class="n">05</span><span class="s s-lab">Field notes · Chapter two</span><span class="meta">Label, eyebrow · Raleway 600 caps<br />24–28px · +0.18em · muted</span></div>
+      <div class="rung"><span class="n">06</span><span class="s s-fig">3,296 <span style="font-size:.45em;color:var(--muted)">conversations</span></span><span class="meta">Large statistic · Cormorant italic 700<br />120–250px on cards · the payoff in red</span></div>
+      <div class="rung"><span class="n">07</span><span class="s"><span class="s-pm">Figure it out.</span></span><span class="meta">Accent · Permanent Marker<br />64–110px · rotated −2° to −4°</span></div>
+      <div class="rung"><span class="n">08</span><span class="s s-arch">Filed Oct. 2026 · Source: own dashboard · Fig. 02</span><span class="meta">Archive · Special Elite 400<br />26–48px · kickers +0.1em · muted</span></div>
+    </div>
+
+    <div class="sub">In use</div>
+    <p class="note" style="margin-top:0">95% minimalism, 5% rebellion: loud type, real surfaces, one red word. Every frame is live HTML at true phone width (360px).</p>
+    <div class="inuse">
+      <figure><div class="iu iu-cap"><div class="ph" style="background-image:url(about:blank#photo/polaroid.jpg)"></div><div class="shade"></div><div class="grain"></div><div class="vig"></div>
+        <div class="hl">You<br />thought<br />you were<br /><span class="red">behind.<img class="brush" src="about:blank#brush/underline-a-blood-red.png" alt="" /></span></div>
+        <div class="meta">Perspective changes everything.</div>
+        <div class="sig">BA · 2026</div>
+        <span class="swap">Replaceable photo</span></div><figcaption class="cap2"><b>Caption line.</b> Big Cormorant capitals under a real photograph, BEHIND in red with a brush underline, one typewritten line above. Loud type, quiet everything else.<br /><span style="font-family:var(--font-mono);font-size:12px">Photo: your polaroid portrait, black and white.</span></figcaption></figure>
+      <figure><div class="iu iu-data"><div class="tone"></div><div class="grain"></div><div class="vig"></div>
+        <div class="kick">Proof · 2026</div><div class="r1"></div>
+        <div class="hl">One system, every day.<img class="brush" src="about:blank#brush/underline-b-blood-red.png" alt="" /></div>
+        <div class="num"><span class="ch" style="transform:translate(0,-0.63cqw) rotate(-1.1deg) scale(1.025)">3</span><span class="ch" style="transform:translate(0,0.06cqw) rotate(-2.6deg) scale(0.988)">,</span><span class="ch" style="transform:translate(0,0.01cqw) rotate(-2.7deg) scale(0.945)">2</span><span class="ch" style="transform:translate(0,-0.77cqw) rotate(-0.4deg) scale(0.952)">9</span><span class="ch" style="transform:translate(0,0.59cqw) rotate(-0.5deg) scale(0.956)">6</span></div>
+        <svg class="flick" viewBox="0 0 360 640" aria-hidden="true"><g fill="#161616" opacity=".55"><circle cx="298" cy="246" r="1.6"/><circle cx="306" cy="252" r=".9"/><circle cx="62" cy="352" r="1.2"/><circle cx="318" cy="331" r="1.1"/></g></svg>
+        <div class="lab">Total conversations</div>
+        <div class="src">Source:<br />own dashboard,<br />Oct 2026.</div>
+        <div class="meta"><span class="r" style="margin-top:0"></span>BA<br />2026</div></div><figcaption class="cap2"><b>Data.</b> The number brushed by hand, a few dry-brush gaps, four flecks of ink and nothing else; the claim in Cormorant, underlined once in red.<br /><span style="font-family:var(--font-mono);font-size:12px">No photograph: paper and ink carry it.</span></figcaption></figure>
+      <figure><div class="iu iu-take"><div class="ph" style="background-image:url(about:blank#photo/eye.jpg)"></div><div class="duo"></div><div class="glow"></div>
+        <div class="w w1"><span class="ch" style="transform:translate(0,0.07cqw) rotate(-0.2deg) scale(1.060)">S</span><span class="ch" style="transform:translate(0,0.01cqw) rotate(-0.1deg) scale(1.016)">t</span><span class="ch" style="transform:translate(0,0.01cqw) rotate(-1.0deg) scale(1.022)">o</span><span class="ch" style="transform:translate(0,-0.49cqw) rotate(0.9deg) scale(0.979)">p</span><span class="sp"> </span><span class="ch" style="transform:translate(0,0.37cqw) rotate(-1.3deg) scale(1.030)">w</span><span class="ch" style="transform:translate(0,0.58cqw) rotate(-1.5deg) scale(1.065)">a</span><span class="ch" style="transform:translate(0,0.14cqw) rotate(0.5deg) scale(0.960)">i</span><span class="ch" style="transform:translate(0,0.03cqw) rotate(-1.6deg) scale(0.948)">t</span><span class="ch" style="transform:translate(0,-0.31cqw) rotate(-1.0deg) scale(0.944)">i</span><span class="ch" style="transform:translate(0,-0.07cqw) rotate(-0.1deg) scale(1.050)">n</span><span class="ch" style="transform:translate(0,0.17cqw) rotate(0.1deg) scale(1.005)">g</span><span class="ch" style="transform:translate(0,-0.05cqw) rotate(0.5deg) scale(0.976)">.</span></div>
+        <div class="w w2"><span class="ch" style="transform:translate(0,0.54cqw) rotate(1.4deg) scale(1.056)">F</span><span class="ch" style="transform:translate(0,0.11cqw) rotate(-1.3deg) scale(0.995)">i</span><span class="ch" style="transform:translate(0,-0.44cqw) rotate(0.1deg) scale(0.965)">g</span><span class="ch" style="transform:translate(0,-0.33cqw) rotate(-0.2deg) scale(0.999)">u</span><span class="ch" style="transform:translate(0,-0.50cqw) rotate(-1.5deg) scale(1.032)">r</span><span class="ch" style="transform:translate(0,0.02cqw) rotate(-0.3deg) scale(1.035)">e</span><span class="sp"> </span><span class="ch" style="transform:translate(0,-0.53cqw) rotate(-0.5deg) scale(1.042)">i</span><span class="ch" style="transform:translate(0,0.19cqw) rotate(0.3deg) scale(1.021)">t</span><span class="sp"> </span><span class="ch" style="transform:translate(0,-0.16cqw) rotate(1.5deg) scale(1.039)">o</span><span class="ch" style="transform:translate(0,0.09cqw) rotate(-0.4deg) scale(1.026)">u</span><span class="ch" style="transform:translate(0,-0.50cqw) rotate(-0.6deg) scale(1.002)">t</span><span class="ch" style="transform:translate(0,0.11cqw) rotate(0.7deg) scale(0.998)">.</span></div>
+        <img class="ul brush" src="about:blank#brush/underline-a-zen-white.png" alt="" />
+        <div class="grain"></div><div class="vig"></div>
+        <span class="swap">Replaceable photo</span></div><figcaption class="cap2"><b>Takeaway.</b> Written by hand in white over the red duotone from your banners: grayscale times Blood Red, highlights lifted warm, heavy grain. The image is the red, so the words stay white.<br /><span style="font-family:var(--font-mono);font-size:12px">Photo: the eye close-up, sample 1 (0:04).</span></figcaption></figure>
+      <figure><div class="iu iu-quote"><div class="ph" style="background-image:url(about:blank#photo/profile.jpg)"></div><div class="grain"></div><div class="vig"></div>
+        <div class="q"><div><span class="ch" style="transform:translate(0,-0.62cqw) rotate(-2.5deg) scale(0.991)">S</span><span class="ch" style="transform:translate(0,-0.58cqw) rotate(1.0deg) scale(0.955)">t</span><span class="ch" style="transform:translate(0,0.41cqw) rotate(-1.4deg) scale(0.959)">r</span><span class="ch" style="transform:translate(0,0.26cqw) rotate(1.3deg) scale(0.958)">a</span><span class="ch" style="transform:translate(0,-0.08cqw) rotate(0.2deg) scale(0.994)">t</span><span class="ch" style="transform:translate(0,-0.65cqw) rotate(2.6deg) scale(0.943)">e</span><span class="ch" style="transform:translate(0,-0.16cqw) rotate(2.3deg) scale(0.966)">g</span><span class="ch" style="transform:translate(0,-0.22cqw) rotate(-0.9deg) scale(1.064)">y</span></div><div><span class="ch" style="transform:translate(0,-0.11cqw) rotate(-0.8deg) scale(0.999)">i</span><span class="ch" style="transform:translate(0,0.02cqw) rotate(-0.8deg) scale(0.991)">s</span><span class="sp"> </span><span class="ch" style="transform:translate(0,-0.13cqw) rotate(-2.4deg) scale(0.943)">a</span> <span class="u"><span class="ch" style="transform:translate(0,0.62cqw) rotate(0.6deg) scale(0.999)">s</span><span class="ch" style="transform:translate(0,0.70cqw) rotate(1.1deg) scale(1.008)">t</span><span class="ch" style="transform:translate(0,0.36cqw) rotate(1.2deg) scale(1.052)">o</span><span class="ch" style="transform:translate(0,-0.53cqw) rotate(-2.4deg) scale(1.070)">r</span><span class="ch" style="transform:translate(0,-0.38cqw) rotate(1.3deg) scale(1.037)">y</span><img class="brush" src="about:blank#brush/underline-b-zen-white.png" alt="" /></span></div>
+          <div><span class="ch" style="transform:translate(0,0.09cqw) rotate(-0.0deg) scale(1.045)">y</span><span class="ch" style="transform:translate(0,-0.29cqw) rotate(-0.9deg) scale(1.030)">o</span><span class="ch" style="transform:translate(0,-0.23cqw) rotate(-0.1deg) scale(0.993)">u</span><span class="sp"> </span><span class="ch" style="transform:translate(0,-0.53cqw) rotate(-0.9deg) scale(1.022)">t</span><span class="ch" style="transform:translate(0,0.30cqw) rotate(2.0deg) scale(1.023)">e</span><span class="ch" style="transform:translate(0,-0.11cqw) rotate(-0.8deg) scale(0.959)">l</span><span class="ch" style="transform:translate(0,-0.33cqw) rotate(1.2deg) scale(0.978)">l</span></div><div><span class="ch" style="transform:translate(0,0.43cqw) rotate(-2.2deg) scale(1.066)">y</span><span class="ch" style="transform:translate(0,0.71cqw) rotate(-0.4deg) scale(0.996)">o</span><span class="ch" style="transform:translate(0,0.67cqw) rotate(0.6deg) scale(0.966)">u</span><span class="ch" style="transform:translate(0,-0.52cqw) rotate(-2.4deg) scale(0.945)">r</span><span class="ch" style="transform:translate(0,-0.60cqw) rotate(-0.3deg) scale(0.952)">s</span><span class="ch" style="transform:translate(0,-0.16cqw) rotate(-1.0deg) scale(1.055)">e</span><span class="ch" style="transform:translate(0,0.24cqw) rotate(-2.5deg) scale(1.058)">l</span><span class="ch" style="transform:translate(0,-0.54cqw) rotate(1.2deg) scale(0.960)">f</span></div><div><span class="ch" style="transform:translate(0,0.19cqw) rotate(-0.9deg) scale(0.941)">a</span><span class="ch" style="transform:translate(0,0.52cqw) rotate(2.5deg) scale(1.070)">b</span><span class="ch" style="transform:translate(0,-0.48cqw) rotate(-1.2deg) scale(0.947)">o</span><span class="ch" style="transform:translate(0,-0.76cqw) rotate(-1.6deg) scale(1.030)">u</span><span class="ch" style="transform:translate(0,0.50cqw) rotate(-0.7deg) scale(1.039)">t</span><span class="sp"> </span><span class="ch" style="transform:translate(0,-0.53cqw) rotate(-0.8deg) scale(0.985)">w</span><span class="ch" style="transform:translate(0,0.24cqw) rotate(-2.4deg) scale(0.965)">h</span><span class="ch" style="transform:translate(0,0.62cqw) rotate(-1.8deg) scale(0.997)">a</span><span class="ch" style="transform:translate(0,0.77cqw) rotate(2.3deg) scale(1.026)">t</span></div><div><span class="ch" style="transform:translate(0,-0.24cqw) rotate(-1.8deg) scale(0.961)">m</span><span class="ch" style="transform:translate(0,0.31cqw) rotate(-1.3deg) scale(0.960)">a</span><span class="ch" style="transform:translate(0,-0.48cqw) rotate(-0.8deg) scale(1.067)">t</span><span class="ch" style="transform:translate(0,-0.31cqw) rotate(-0.0deg) scale(0.993)">t</span><span class="ch" style="transform:translate(0,-0.21cqw) rotate(1.7deg) scale(1.046)">e</span><span class="ch" style="transform:translate(0,-0.38cqw) rotate(-0.6deg) scale(1.057)">r</span><span class="ch" style="transform:translate(0,0.66cqw) rotate(-2.4deg) scale(0.983)">s</span><span class="ch" style="transform:translate(0,-0.07cqw) rotate(1.2deg) scale(0.950)">.</span></div></div>
+        <div class="meta">Bernard Ablola<span class="r"></span>BA · 2026</div>
+        <span class="swap">Replaceable photo</span></div><figcaption class="cap2"><b>Quote.</b> Your profile against the red wall, the quote written by hand in the space you look into. The wall is the red, so the words and their underline stay white. The square photo sits at the bottom; its own red, sampled, extends the field above.<br /><span style="font-family:var(--font-mono);font-size:12px">Photo: your red profile portrait.</span></figcaption></figure>
+    </div>
+
+    <div class="sub">Rules</div>
+    <ul class="rules">
+      <li>At most two faces per frame, plus Special Elite for a small archival detail.</li>
+      <li>One Cormorant headline per frame. One red word per frame.</li>
+      <li>Permanent Marker two or three times a video, never twice in one frame.</li>
+      <li>Special Elite for dates, sources and labels; big numbers stay in Cormorant.</li>
+      <li>Captions are always Raleway 800 caps, never light weights over footage.</li>
+      <li>Cormorant never below 48px on video: its hairlines disappear.</li>
+    </ul>
+  </section>
+  <section>
+    <h2>Colour</h2>
+    <div class="k" style="margin:4px 0 10px">Primary · core identity</div>
+    <div class="sw"><div class="chip"><i style="background:#0D0D0D"></i><b>Obsidian Black</b><span>#0D0D0D<br />default ground: mystery, power</span></div><div class="chip"><i style="background:#B91C1C"></i><b>Blood Red</b><span>#B91C1C<br />the one accent: key word, CTA, ensō</span></div><div class="chip"><i style="background:#F5F5F5"></i><b>Zen White</b><span>#F5F5F5<br />text on dark, the light ground</span></div></div>
+    <div class="k" style="margin:22px 0 10px">Secondary · accents and depth</div>
+    <div class="sw"><div class="chip"><i style="background:#2E2E2E"></i><b>Iron Gray</b><span>#2E2E2E<br />hairlines, frames, raised surfaces</span></div><div class="chip"><i style="background:#1A1F2B"></i><b>Ink Blue</b><span>#1A1F2B<br />second ground: cooler, moodier cards</span></div></div>
+    <div class="k" style="margin:22px 0 10px">Working shades · for legibility only</div>
+    <div class="sw"><div class="chip"><i style="background:#9A9A9A"></i><b>Muted text on dark</b><span>#9A9A9A<br />Iron Gray is too dark for text</span></div><div class="chip"><i style="background:#8C8C8C"></i><b>Losses in charts</b><span>#8C8C8C<br />greyed out; red stays emphasis</span></div><div class="chip"><i style="background:#4A5468"></i><b>Chart series 3</b><span>#4A5468<br />Ink Blue lifted so it shows on black</span></div></div>
+  </section>
+  <section>
+    <h2>Your three modes</h2>
+    <p class="note">How each mode looks for you, on a frame of your own footage.</p>
+    <div class="grid">
+      <figure><img src="about:blank#img/hifi.jpg" alt="Hi-fi hook and caption" /><figcaption><b>Hi-fi</b> produced: none hook, captions in phrases, cards, camera zooms</figcaption></figure>
+      <figure><img src="about:blank#img/lofi.jpg" alt="Lo-fi text box and caption" /><figcaption><b>Lo-fi</b> selfie: captions word-by-word</figcaption></figure>
+      <figure><img src="about:blank#img/showcase.jpg" alt="Showcase emphatic word" /><figcaption><b>Showcase</b> show-off: a big word lands with a stamp; transitions zoom, push, reveal</figcaption></figure>
+    </div>
+  </section>
+  <section id="cards">
+    <h2>Cards</h2>
+    <p class="tdir">One frame. One idea. <em>One focal point.</em></p>
+    <ul class="rules" style="margin-bottom:22px">
+      <li>Each card is a sequence of four moments, not a static infographic.</li>
+      <li>One dominant headline or number per moment, one supporting visual, one short line.</li>
+      <li>Crop the chart, isolate the number, drop secondary labels.</li>
+      <li>Nothing that carries the story is smaller than 19px on a phone.</li>
+      <li>Ivory washi paper, archival marks, one handwritten takeaway.</li>
+      <li>Smooth, restrained motion: fades, line draws, a slow push.</li>
+    </ul>
+    <div class="ptools">
+      <span>Previews play at real phone width (360px).</span>
+      <label><input type="checkbox" id="t-caps" /> Show the caption band</label>
+      <label><input type="checkbox" id="t-ui" /> Show platform buttons</label>
+    </div>
+    <div class="crow">
+      <div class="phone">
+        <div class="ov cap"><span><b>You thought you were <em>behind.</em></b></span></div>
+        <div class="ov ui top"></div><div class="ov ui rail"><i></i><i></i><i></i><i></i></div><div class="ov ui bot"><i></i></div>
+      </div>
+      <div class="cmeta">
+        <div class="k2">7.0s · dark</div>
+        <h3>Fig. 01 · Scissors</h3>
+        <p>More views, less pay. Each number gets its own moment; the chart is only the supporting visual.</p>
+        <div class="moments"><figure><img src="about:blank#img/m-scissors-1.jpg" alt="scissors moment 1: Headline" /><figcaption><b>1 · Headline</b><br />the idea, alone</figcaption></figure><figure><img src="about:blank#img/m-scissors-2.jpg" alt="scissors moment 2: +32.4%" /><figcaption><b>2 · +32.4%</b><br />views climb</figcaption></figure><figure><img src="about:blank#img/m-scissors-3.jpg" alt="scissors moment 3: −11.5%" /><figcaption><b>3 · −11.5%</b><br />pay per view falls</figcaption></figure><figure><img src="about:blank#img/m-scissors-4.jpg" alt="scissors moment 4: The takeaway" /><figcaption><b>4 · The takeaway</b><br />the gap is the story</figcaption></figure></div>
+        <div class="pass">Phone test at 360px: passed · supporting lines 19px, figures 67px, headline 59px on screen</div>
+      </div>
+    </div>
+    <div class="crow">
+      <div class="phone light">
+        <div class="ov cap"><span><b>You thought you were <em>behind.</em></b></span></div>
+        <div class="ov ui top"></div><div class="ov ui rail"><i></i><i></i><i></i><i></i></div><div class="ov ui bot"><i></i></div>
+      </div>
+      <div class="cmeta">
+        <div class="k2">6.0s · light</div>
+        <h3>Fig. 02 · Counter-loupe</h3>
+        <p>Starts with the figure, shows the whole it belongs to, then magnifies how little it is.</p>
+        <div class="moments"><figure><img src="about:blank#img/m-counter-loupe-1.jpg" alt="counter-loupe moment 1: +1.6%" /><figcaption><b>1 · +1.6%</b><br />the figure, alone</figcaption></figure><figure><img src="about:blank#img/m-counter-loupe-2.jpg" alt="counter-loupe moment 2: The year" /><figcaption><b>2 · The year</b><br />revenue bar, red sliver</figcaption></figure><figure><img src="about:blank#img/m-counter-loupe-3.jpg" alt="counter-loupe moment 3: The loupe" /><figcaption><b>3 · The loupe</b><br />+$2.9K, magnified</figcaption></figure><figure><img src="about:blank#img/m-counter-loupe-4.jpg" alt="counter-loupe moment 4: The takeaway" /><figcaption><b>4 · The takeaway</b><br />barely a sliver</figcaption></figure></div>
+        <div class="pass">Phone test at 360px: passed · supporting lines 19px, figures 43–100px on screen</div>
+      </div>
+    </div>
+    <div class="crow">
+      <div class="phone light">
+        <div class="ov cap"><span><b>You thought you were <em>behind.</em></b></span></div>
+        <div class="ov ui top"></div><div class="ov ui rail"><i></i><i></i><i></i><i></i></div><div class="ov ui bot"><i></i></div>
+      </div>
+      <div class="cmeta">
+        <div class="k2">6.5s · light</div>
+        <h3>Fig. 03 · Task grid</h3>
+        <p>The number first, the week as tiles second, the six that stay third, then one line to keep.</p>
+        <div class="moments"><figure><img src="about:blank#img/m-task-grid-1.jpg" alt="task-grid moment 1: 94" /><figcaption><b>1 · 94</b><br />the number, alone</figcaption></figure><figure><img src="about:blank#img/m-task-grid-2.jpg" alt="task-grid moment 2: The week" /><figcaption><b>2 · The week</b><br />94 tiles automate</figcaption></figure><figure><img src="about:blank#img/m-task-grid-3.jpg" alt="task-grid moment 3: The six" /><figcaption><b>3 · The six</b><br />ringed, named by hand</figcaption></figure><figure><img src="about:blank#img/m-task-grid-4.jpg" alt="task-grid moment 4: The takeaway" /><figcaption><b>4 · The takeaway</b><br />automate the 94, own the 6</figcaption></figure></div>
+        <div class="pass">Phone test at 360px: passed · supporting lines 21px, figure 160px, takeaway 45px on screen</div>
+      </div>
+    </div>
+  </section>
+  <footer>Anything here can change: fonts, colours, captions, pace. Say what feels off and the board comes back with it fixed.</footer>
+</main>
+<script>
+(function () {
+  function bind(id, cls) {
+    var el = document.getElementById(id); if (!el) return;
+    el.addEventListener('change', function () { document.getElementById('cards').classList.toggle(cls, el.checked); });
+  }
+  bind('t-caps', 'show-caps'); bind('t-ui', 'show-ui');
+})();
+</script>
+</body>
+</html>
+
+</body></html>

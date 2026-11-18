@@ -1,0 +1,17 @@
+{
+ "_about": "Sound effects made with ElevenLabs for Bernard's pieces (free to ship with the studio). Code-made effects and beds live in studio_engine/sound.py; sound.names() lists both.",
+ "impact": {"file": "impact.mp3", "what": "a low cinematic boom, for the one big number or reveal", "seconds": 2.48},
+ "impact-wet": {"file": "impact-wet.mp3", "what": "a wet paint splat hit, softer than impact", "seconds": 2.48},
+ "impact-air": {"file": "impact-air.mp3", "what": "a hit with a burst of air, mid weight", "seconds": 2.48},
+ "brush": {"file": "brush.mp3", "what": "one confident brush stroke, for a brush underline drawing on", "seconds": 2.0},
+ "brush-swirl": {"file": "brush-swirl.mp3", "what": "a sweeping brush swirl", "seconds": 2.48},
+ "whoosh": {"file": "whoosh.mp3", "what": "a soft air whoosh, for a move or a cut", "seconds": 1.48},
+ "card": {"file": "card.mp3", "what": "one card slapped on a table, for a card or receipt landing", "seconds": 1.0},
+ "cards": {"file": "cards.mp3", "what": "a few cards laid down, quiet", "seconds": 3.0},
+ "paper": {"file": "paper.mp3", "what": "a sheet of paper sliding or turning", "seconds": 2.0},
+ "riser": {"file": "riser.mp3", "what": "a rising swell that ends on its peak; always pay it off with an impact", "seconds": 2.48},
+ "shimmer": {"file": "shimmer.mp3", "what": "a glassy shimmer swell", "seconds": 3.48},
+ "paint-dabs": {"file": "paint-dabs.mp3", "what": "small wet paint dabs, quiet", "seconds": 3.0},
+ "paint-flow": {"file": "paint-flow.mp3", "what": "paint flowing, a longer texture", "seconds": 5.0},
+ "cloth": {"file": "cloth.mp3", "what": "a cloth banner moving in wind", "seconds": 5.0}
+}

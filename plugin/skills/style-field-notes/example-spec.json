@@ -1,0 +1,104 @@
+{
+ "style": "field-notes",
+ "spec_version": 1,
+ "slides": [
+  {
+   "kind": "cover",
+   "title": "My brand kit.\nBuilt in an afternoon, for $20.",
+   "print": {
+    "photo": {
+     "source": "photo-polaroid",
+     "y": 0.4
+    }
+   },
+   "marker": {
+    "text": "here's exactly what I did"
+   }
+  },
+  {
+   "kind": "step",
+   "step": 1,
+   "title": "I brainstorm in Claude Design.",
+   "typed": [
+    "I describe the feeling I want.",
+    "I love the show on Hulu called Shogun.",
+    "My son watches Samurai Rabbit on Netflix.",
+    "I want the intersection of dramatic,\ncinematic and exciting."
+   ],
+   "dim": [
+    "I upload reference images."
+   ],
+   "print": {
+    "photo": {
+     "source": "receipts-0-5",
+     "x": 0.4
+    },
+    "caption": "the design system it built"
+   },
+   "marker": {
+    "text": "fastest ideation process I've ever used"
+   }
+  },
+  {
+   "kind": "step",
+   "layout": "step-right",
+   "step": 2,
+   "title": "I export it to Canva.",
+   "typed_top": 340,
+   "typed": [
+    "Claude Design gives me the direction,\nthe concept, the system.",
+    "Canva gives me the execution,\nthe templates, the distribution."
+   ],
+   "dim": [
+    "There'll be some back and forth,\nbecause it doesn't get it right\nthe first time."
+   ],
+   "print": {
+    "photo": {
+     "source": "receipts-9-5",
+     "x": 0.55,
+     "y": 0.4
+    },
+    "caption": "one of the templates, in Canva"
+   }
+  },
+  {
+   "kind": "step",
+   "layout": "step-list",
+   "step": 3,
+   "title": "I refine.",
+   "typed_top": 330,
+   "typed": [
+    "You'll not get it right in the first prompt.",
+    "That is not a flaw in the tool.\nThat is a process."
+   ],
+   "list_title": "CAVEATS",
+   "list": [
+    "You'll hit token limits.",
+    "It will ask you to upgrade mid-session.",
+    "Budget for that friction."
+   ],
+   "print": {
+    "photo": {
+     "source": "qp4-292",
+     "x": 0.28
+    }
+   },
+   "marker": {
+    "text": "this will be the worst it ever is"
+   }
+  },
+  {
+   "kind": "close",
+   "title": "The philosophy still has to come from you.\nClaude Design executes, you direct.",
+   "underline": "you direct.",
+   "print": {
+    "photo": {
+     "source": "qp4-332",
+     "x": 0.6,
+     "y": 0.4
+    }
+   },
+   "foot": "Save this for your next rebrand."
+  }
+ ]
+}

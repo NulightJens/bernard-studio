@@ -1,0 +1,141 @@
+{
+  "styles": [
+    {
+      "slug": "screen-and-face",
+      "name": "Screen and face",
+      "kind": "reel",
+      "what": "Your screen on top, you below, and the number or key phrase lands between them from the first frame.",
+      "why": "A screenshot next to your face is the one format that has grown your Instagram.",
+      "give": "A talking video of you, plus a screen recording of what you are talking about.",
+      "min_input": "A talking video of 10 to 20 seconds about one thing, plus a screen recording or screenshot of that thing.",
+      "record": "Talk to the camera for 10 to 20 seconds about one thing you did on screen, then record that screen.",
+      "example": {"video": "screen-and-face/example.mp4", "poster": "screen-and-face/poster.jpg"}
+    },
+    {
+      "slug": "receipts",
+      "name": "Receipts",
+      "kind": "reel",
+      "what": "Paper receipts land on the claim: what it cost then, what it costs now. A proven reel edit, set in your brand kit.",
+      "why": "The proof is on screen the moment you say it.",
+      "give": "A talking video where you compare a before and an after number, plus a screen recording.",
+      "min_input": "A talking video where you say a then-and-now pair of numbers, what it cost or took before and what it costs or takes now.",
+      "record": "Say the old price or time and the new one in one breath, for example \"that took eight weeks, now it takes twenty minutes\".",
+      "example": {"video": "receipts/example.mp4", "poster": "receipts/poster.jpg"}
+    },
+    {
+      "slug": "documentary",
+      "name": "Documentary",
+      "kind": "reel",
+      "what": "A wide cinema frame, slow push-ins and candlelight. A figure below counts as you say it.",
+      "why": "The most cinematic of the set.",
+      "give": "A talking video. A number in what you say makes it land.",
+      "min_input": "A talking video of 8 to 20 seconds about one thing.",
+      "record": "A calm, seated take in a warm room works best. Any of your existing videos can be used.",
+      "example": {"video": "documentary/example.mp4", "poster": "documentary/poster.jpg"}
+    },
+    {
+      "slug": "words-in-the-room",
+      "name": "Words in the room",
+      "kind": "reel",
+      "what": "Your words on the wall behind you, with you in front of them.",
+      "why": "Premium and calm, and the key words are there from the first frame.",
+      "give": "A talking video shot on a tripod, with some wall showing behind you.",
+      "min_input": "A talking video of 8 to 18 seconds shot on a tripod, with some wall showing beside or above your head.",
+      "record": "Keep the camera still and leave space on the wall beside or above your head.",
+      "example": {"video": "words-in-the-room/example.mp4", "poster": "words-in-the-room/poster.jpg"}
+    },
+    {
+      "slug": "cutout",
+      "name": "Cutout",
+      "kind": "reel",
+      "what": "You cut out on black, with a new picture on each key word.",
+      "why": "The fastest pace in the set.",
+      "give": "A well-lit talking video, plus screen recordings or photos for the pictures.",
+      "min_input": "A well-lit talking video of 8 to 18 seconds with you on camera the whole time, plus three to five pictures (screen recordings, screenshots or photos).",
+      "record": "Light your face and hair well and wear something that stands apart from the background.",
+      "example": {"video": "cutout/example.mp4", "poster": "cutout/poster.jpg"}
+    },
+    {
+      "slug": "the-art-of",
+      "name": "The art of",
+      "kind": "carousel",
+      "what": "An object-grid carousel: the topic ringed by real objects and two cutouts of you, then one idea per slide with six captioned objects.",
+      "why": "A format that is working on Instagram right now, with your face on it twice.",
+      "give": "A topic and your lines (from one of your videos or typed), and a video or photos of you.",
+      "min_input": "A topic with at least three parts and about six short lines of yours for each part, so 18 lines or more, from a video or typed.",
+      "record": "Nothing new is needed. For new poses, a few sharp photos of you against a plain wall.",
+      "example": {
+        "sets": [
+          {"title": "The art of building your brand", "slides": ["the-art-of/building-your-brand-slide-01.jpg", "the-art-of/building-your-brand-slide-02.jpg", "the-art-of/building-your-brand-slide-03.jpg", "the-art-of/building-your-brand-slide-04.jpg", "the-art-of/building-your-brand-slide-05.jpg", "the-art-of/building-your-brand-slide-06.jpg", "the-art-of/building-your-brand-slide-07.jpg", "the-art-of/building-your-brand-slide-08.jpg"]},
+          {"title": "The art of being a team of one", "slides": ["the-art-of/team-of-one-slide-01.jpg", "the-art-of/team-of-one-slide-02.jpg", "the-art-of/team-of-one-slide-03.jpg", "the-art-of/team-of-one-slide-04.jpg", "the-art-of/team-of-one-slide-05.jpg", "the-art-of/team-of-one-slide-06.jpg", "the-art-of/team-of-one-slide-07.jpg", "the-art-of/team-of-one-slide-08.jpg"]}
+        ]
+      }
+    },
+    {
+      "slug": "prompt-pack",
+      "name": "Prompt pack",
+      "kind": "carousel",
+      "what": "A raked-sand cover that draws itself while you speak, then your prompts, one per slide, ready to copy.",
+      "why": "Prompt carousels are your best-performing slideshow type.",
+      "give": "Your prompts, and one short voice line for the moving cover.",
+      "min_input": "One to five of your prompts, word for word, typed or read out in a video.",
+      "record": "Nothing new is needed if the prompts are in one of your videos.",
+      "example": {"cover": "prompt-pack/cover.mp4", "cover_poster": "prompt-pack/cover-poster.jpg", "slides": ["prompt-pack/slide-01.jpg", "prompt-pack/slide-02.jpg", "prompt-pack/slide-03.jpg", "prompt-pack/slide-04.jpg", "prompt-pack/slide-05.jpg"]}
+    },
+    {
+      "slug": "field-notes",
+      "name": "Field notes",
+      "kind": "carousel",
+      "what": "Your steps typed on cream paper, with taped prints of your screen and of you.",
+      "why": "Your process, shown the way you did it.",
+      "give": "Your steps (from a video or typed), a few screen frames and a photo of you.",
+      "min_input": "Three or more short lines or steps of yours, typed or from a video, and a photo or frame of you for the cover.",
+      "record": "Nothing new is needed if you walked through the steps in a video.",
+      "example": {"slides": ["field-notes/slide-01.jpg", "field-notes/slide-02.jpg", "field-notes/slide-03.jpg", "field-notes/slide-04.jpg", "field-notes/slide-05.jpg"]}
+    },
+    {
+      "slug": "top-5",
+      "name": "Top 5",
+      "kind": "carousel",
+      "what": "A countdown list with your real screens, one item per slide.",
+      "why": "Lists are your biggest format ever.",
+      "give": "A list of five things, and screen frames or footage for each.",
+      "min_input": "A list of at least three things, typed or from a video, with a picture for each: your screen or a moment of your video.",
+      "record": "Nothing new is needed if the list comes from one of your videos.",
+      "example": {"slides": ["top-5/slide-01.jpg", "top-5/slide-02.jpg", "top-5/slide-03.jpg", "top-5/slide-04.jpg", "top-5/slide-05.jpg", "top-5/slide-06.jpg"]}
+    },
+    {
+      "slug": "zen-garden",
+      "name": "Zen garden",
+      "kind": "animated",
+      "what": "One overhead shot of black sand. Stones are ringed as you speak, and one red stone rises on your last line.",
+      "why": "Calm and yours: the garden from your brand origin.",
+      "give": "A short voice line, 10 to 20 seconds, from any of your videos.",
+      "min_input": "A voice line of 10 to 20 seconds from any of your videos.",
+      "record": "Nothing new is needed.",
+      "example": {"video": "zen-garden/example.mp4", "poster": "zen-garden/poster.jpg"}
+    },
+    {
+      "slug": "your-feed",
+      "name": "Your feed",
+      "kind": "animated",
+      "what": "Your real posts between identical grey ones, until yours lifts out of the feed.",
+      "why": "Your own work as the proof.",
+      "give": "A screen recording scrolling through your own posts, and a short voice line.",
+      "min_input": "A voice line of 10 to 20 seconds, plus a screen recording scrolling slowly through your own posts.",
+      "record": "Record your screen while you scroll slowly through your own posts.",
+      "example": {"video": "your-feed/example.mp4", "poster": "your-feed/poster.jpg"}
+    },
+    {
+      "slug": "moving-type",
+      "name": "Moving type",
+      "kind": "animated",
+      "what": "Your words set as a moving typeset page, ending on the line that matters, struck or marked in red.",
+      "why": "Clean and readable with the sound off.",
+      "give": "A short voice line, 10 to 20 seconds, from any of your videos.",
+      "min_input": "A voice line of 10 to 20 seconds from any of your videos, best with a number in it.",
+      "record": "Nothing new is needed.",
+      "example": {"video": "moving-type/example.mp4", "poster": "moving-type/poster.jpg"}
+    }
+  ]
+}

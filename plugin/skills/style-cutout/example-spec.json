@@ -1,0 +1,38 @@
+{
+ "style": "cutout",
+ "spec_version": 1,
+ "passage": "passage/passage.json",
+ "sources": {"screen": "sources/screen.mov"},
+ "cutout": {"x": 0.492, "width": 0.6875, "scale": 0.86, "band": 31},
+ "opening": {
+  "kicker": 1,
+  "figure": "$40,000",
+  "trail": "from an agency, 2019",
+  "side": "right",
+  "picture": {"source": "screen", "in": 0.15, "crop": {"x": 0.03125, "y": 0, "w": 0.79167}}
+ },
+ "beats": [
+  {"kind": "figure", "at": {"word": 7, "offset": -0.02}, "text": "$40,000", "side": "left",
+   "label": [{"text": "AN AGENCY", "at": {"word": 10}}, {"text": "2019", "at": {"word": 12}}]},
+  {"kind": "room", "at": {"word": 17}},
+  {"kind": "figure", "at": {"word": 27, "offset": -0.02}, "text": "$20", "unit": "/ month", "old": "$40,000",
+   "size": 1.16, "side": "right"},
+  {"kind": "picture", "at": {"word": 32}, "source": "screen", "in": 9.4,
+   "crop": {"x": 0.171875, "y": 0.02222, "w": 0.572917}, "keep_figure": true, "side": "right"}
+ ],
+ "room": {"x": 0.492, "zoom": 1.4, "top": 440},
+ "captions": [
+  {"at": {"t": 0}, "text": "THIS RIGHT HERE"},
+  {"at": {"word": 3}, "text": "WOULD HAVE COST ME"},
+  {"at": {"word": 7}, "text": "$40,000"},
+  {"at": {"word": 8}, "text": "FROM AN AGENCY"},
+  {"at": {"word": 11}, "text": "IN 2019."},
+  {"at": {"word": 13}, "text": "I KNOW BECAUSE"},
+  {"at": {"word": 16}, "text": "THE COMPANY I WORK FOR"},
+  {"at": {"word": 21}, "text": "PAID FOR IT.", "red": "PAID"},
+  {"at": {"word": 24}, "text": "NOW IT COSTS"},
+  {"at": {"word": 27}, "text": "$20 A MONTH"},
+  {"at": {"word": 30}, "text": "AND A CONVERSATION.", "red": "CONVERSATION."}
+ ],
+ "tail": 1.0
+}

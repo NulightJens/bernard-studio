@@ -1,0 +1,67 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "type": "object",
+ "required": ["style", "spec_version", "wall"],
+ "$defs": {
+  "at": {"anyOf": [{"type": "integer", "minimum": 0}, {"type": "number"},
+                   {"type": "object", "properties": {"word": {"type": "integer", "minimum": 0}, "t": {"type": "number"},
+                    "edge": {"enum": ["start", "end", "mid"]}, "offset": {"type": "number"}}, "additionalProperties": false}]},
+  "point": {"type": "array", "items": {"type": "number", "minimum": -400, "maximum": 2400}, "minItems": 2, "maxItems": 2},
+  "hex": {"type": "string", "pattern": "^#[0-9A-Fa-f]{6}$"}
+ },
+ "properties": {
+  "style": {"const": "words-in-the-room"},
+  "spec_version": {"const": 1},
+  "passage": {"type": "string"},
+  "format": {"type": "object"},
+  "room": {
+   "type": "object",
+   "properties": {
+    "scale": {"type": "number", "minimum": 0.3, "maximum": 3},
+    "left": {"type": "number", "minimum": -4000, "maximum": 1080},
+    "top": {"type": "number", "minimum": -4000, "maximum": 1600},
+    "fill": {"$ref": "#/$defs/hex"}
+   },
+   "additionalProperties": false
+  },
+  "camera": {
+   "type": "object",
+   "properties": {
+    "push": {"type": "number", "minimum": 0, "maximum": 0.2},
+    "drift": {"type": "number", "minimum": -40, "maximum": 40},
+    "focus": {"$ref": "#/$defs/point"},
+    "light": {"$ref": "#/$defs/point"}
+   },
+   "additionalProperties": false
+  },
+  "wall": {
+   "type": "array", "minItems": 1, "maxItems": 10,
+   "items": {
+    "type": "object",
+    "required": ["kind", "text", "at", "y"],
+    "properties": {
+     "kind": {"enum": ["figure", "line", "type", "title"]},
+     "text": {"type": "string", "minLength": 1, "maxLength": 24},
+     "at": {"$ref": "#/$defs/at"},
+     "x": {"anyOf": [{"const": "center"}, {"type": "number", "minimum": 0, "maximum": 1000}]},
+     "y": {"type": "number", "minimum": 0, "maximum": 1920},
+     "size": {"type": "number", "minimum": 24, "maximum": 400},
+     "warm": {"$ref": "#/$defs/at"},
+     "strike": {"$ref": "#/$defs/at"},
+     "dim": {"$ref": "#/$defs/at"},
+     "until": {"$ref": "#/$defs/at"},
+     "leave": {"enum": ["lift", "fade"]},
+     "stack": {"type": "array", "items": {"$ref": "#/$defs/at"}, "minItems": 1, "maxItems": 3}
+    },
+    "additionalProperties": false
+   }
+  },
+  "color": {"$ref": "#/$defs/hex"},
+  "end_hold": {"type": "number", "minimum": 0, "maximum": 2},
+  "finish": {"type": "object", "properties": {"grain": {"type": "integer", "minimum": 0, "maximum": 20}},
+             "additionalProperties": false},
+  "sound": {"type": "object"},
+  "brand": {"type": "object"}
+ },
+ "additionalProperties": false
+}

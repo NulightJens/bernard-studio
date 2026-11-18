@@ -1,0 +1,60 @@
+{
+ "style": "top-5",
+ "spec_version": 1,
+ "cover": {
+  "title": "What $20 a month\nbuilt for my brand",
+  "kicker": "Ranked · from my own build",
+  "photo": {
+   "source": "cover",
+   "y": 0.4
+  }
+ },
+ "items": [
+  {
+   "title": "30 quote cards in one sitting",
+   "small": "From my template library",
+   "photo": {
+    "source": "m05"
+   },
+   "from": "My screen, June 2026",
+   "quote": "This is 30 days of image posts done in less than an hour."
+  },
+  {
+   "title": "One look on every platform",
+   "small": "LinkedIn, TikTok, the website",
+   "photo": {
+    "source": "m04",
+    "y": 0.2
+   },
+   "from": "My LinkedIn, June 2026",
+   "quote": "Same color, same font, same energy. It looks intentional. It looks like a brand."
+  },
+  {
+   "title": "50 templates, all on brand",
+   "small": "Exported to Canva",
+   "photo": {
+    "source": "m03"
+   },
+   "from": "My screen, June 2026",
+   "quote": "You don't start from scratch. You open up your template library."
+  },
+  {
+   "title": "The brand guide itself",
+   "small": "Colors, fonts, design rules",
+   "photo": {
+    "source": "m02"
+   },
+   "from": "My design system in Claude Design",
+   "quote": "This right here would have cost me $40,000 from an agency in 2019."
+  },
+  {
+   "title": "Your taste",
+   "small": "The one part AI did not build",
+   "photo": {
+    "source": "m01",
+    "y": 0.3
+   },
+   "quote": "AI cannot tell you what moves you. It cannot pick your inspirations. That's your job."
+  }
+ ]
+}

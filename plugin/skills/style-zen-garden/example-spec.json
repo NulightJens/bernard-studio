@@ -1,0 +1,22 @@
+{
+  "style": "zen-garden",
+  "spec_version": 1,
+  "passage": "passage/passage.json",
+  "beats": [
+    {"kind": "feed", "flick": 2, "land": 6,
+     "light": [{"to": "above", "at": 11}, {"to": "below", "at": 16}],
+     "go": 17},
+    {"kind": "stones", "arrive": 18, "rings": [19, 24, 26]},
+    {"kind": "rise", "at": 31, "up": 33, "ring": 34}
+  ],
+  "captions": [
+    {"text": "When someone scrolls past your post,"},
+    {"text": "it looks like the person above you"},
+    {"text": "and the person below you."},
+    {"text": "Your brand already exists"},
+    {"text": "in the things you love."},
+    {"text": "You just have not pulled it out yet."}
+  ],
+  "hold": 2.05,
+  "sound": {"bed": "zen"}
+}
